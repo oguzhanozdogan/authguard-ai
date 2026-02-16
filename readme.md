@@ -197,7 +197,6 @@ This prototype does not perform:
 Detection accuracy depends on CodeQL modeling of application context.
 
 ## Research Use
-
 This artifact supports:
 
 - empirical vulnerability analysis
