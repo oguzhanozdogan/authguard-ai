@@ -1,4 +1,6 @@
 # AuthGuard-AI
+<img width="1196" height="605" alt="image" src="https://github.com/user-attachments/assets/216209a2-0fbb-467c-b774-4e7f73267a61" />
+
 
 A CodeQL-based security analysis agent for LLM-generated source code.
 
