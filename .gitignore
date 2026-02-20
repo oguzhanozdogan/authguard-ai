@@ -1,5 +1,8 @@
 __pycache__/
 *.pyc
+venv/
+.venv/
 codeql_db/
 results.sarif
 reports/
+*.log

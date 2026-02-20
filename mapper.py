@@ -1,15 +1,30 @@
 # mapper.py
 
+import re
+
 from taxonomy import TAXONOMY
+
+_CWE_PATTERN = re.compile(r"^CWE-0*(\d+)$", re.IGNORECASE)
 
 
 def normalize_cwe(cwe: str) -> str:
+    cleaned = str(cwe).strip().upper()
+    match = _CWE_PATTERN.match(cleaned)
+    if not match:
+        return cleaned
+    return f"CWE-{int(match.group(1))}"
 
-    if not cwe.startswith("CWE-"):
-        return cwe
 
-    num = cwe.replace("CWE-", "")
-    return "CWE-" + str(int(num))
+def _build_taxonomy_index() -> dict[str, list[tuple[str, dict]]]:
+    index: dict[str, list[tuple[str, dict]]] = {}
+    for category, data in TAXONOMY.items():
+        for cwe in data.get("cwe", []):
+            normalized = normalize_cwe(cwe)
+            index.setdefault(normalized, []).append((category, data))
+    return index
+
+
+_TAXONOMY_INDEX = _build_taxonomy_index()
 
 
 def map_to_taxonomy(findings):
@@ -18,13 +33,13 @@ def map_to_taxonomy(findings):
 
     for f in findings:
 
-        normalized_cwes = [normalize_cwe(c) for c in f.get("cwe", [])]
+        normalized_cwes = [normalize_cwe(c) for c in f.get("cwe", []) if c]
         matches = []
 
-        for category, data in TAXONOMY.items():
-
-            if any(c in data["cwe"] for c in normalized_cwes):
-                matches.append((category, data))
+        for cwe in normalized_cwes:
+            for category_data in _TAXONOMY_INDEX.get(cwe, []):
+                if category_data not in matches:
+                    matches.append(category_data)
 
         if matches:
             for category, data in matches:
