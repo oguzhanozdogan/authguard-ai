@@ -5,29 +5,70 @@ A CodeQL-based security analysis pipeline for LLM-generated source code.
 
 ## Overview
 
-AuthGuard-AI is a research prototype focused on security risks in generated code.
-It automates:
+AuthGuard-AI is a research prototype developed as part of a master's thesis on security risks in large language model (LLM)-generated code.
 
-1. CodeQL database creation
-2. CodeQL security analysis
-3. SARIF parsing
-4. CWE-to-taxonomy mapping
-5. JSON report generation
+It implements an automated pipeline that:
+
+- analyzes AI-generated JavaScript programs
+- runs static application security testing (SAST) with CodeQL
+- extracts findings in SARIF format
+- maps findings to CWE identifiers
+- classifies weaknesses using a structured taxonomy
+- generates mitigation-oriented security reports
+
+## Research Objectives
+
+- Detect injection and input-validation vulnerabilities systematically
+- Classify findings using standardized CWE identifiers
+- Validate recurring weakness patterns empirically
+- Support cross-model comparability
+- Produce evidence-based mitigation guidance
+
+## System Architecture
+
+```text
+Source Code (LLM Output)
+        |
+        v
+CodeQL SAST Analysis
+        |
+        v
+SARIF Output
+        |
+        v
+Parser
+        |
+        v
+Taxonomy Mapper
+        |
+        v
+Report Generator
+```
+
+## Technology Stack
+
+| Component | Tool |
+| --- | --- |
+| Programming Language | Python 3.11+ |
+| Static Analysis | CodeQL CLI 2.24.1 |
+| Output Format | SARIF 2.1.0 |
+| Data Storage | JSON |
+| Platform | Windows / Linux |
 
 ## Project Structure
 
 ```text
 authguard_ai/
-|- main.py
-|- config.py
-|- codeql_runner.py
-|- parser.py
-|- mapper.py
-|- taxonomy.py
-|- reporter.py
-|- test_parser.py
-|- dataset/
-`- .github/workflows/codeql.yml
+|- main.py              # Pipeline controller
+|- config.py            # Tool configuration
+|- codeql_runner.py     # CodeQL integration
+|- parser.py            # SARIF parser
+|- mapper.py            # Taxonomy mapping
+|- taxonomy.py          # Vulnerability taxonomy
+|- reporter.py          # Report generator
+|- dataset/             # LLM-generated samples
+|- reports/             # Output reports
+`- results.sarif        # Raw analysis output
 ```
 
 ## Requirements
