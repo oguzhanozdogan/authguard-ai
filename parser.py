@@ -29,14 +29,21 @@ def parse_sarif(file_path: str):
         tool = run.get("tool", {})
         rules_index = {}
 
-        # Build rule metadata lookup
+        # Build rule metadata lookup from both driver and extensions.
         for rule in tool.get("driver", {}).get("rules", []):
-            rules_index[rule["id"]] = rule
+            rule_id = rule.get("id")
+            if rule_id:
+                rules_index[rule_id] = rule
+        for extension in tool.get("extensions", []):
+            for rule in extension.get("rules", []):
+                rule_id = rule.get("id")
+                if rule_id and rule_id not in rules_index:
+                    rules_index[rule_id] = rule
 
         # Iterate over results
         for result in run.get("results", []):
 
-            rule_id = result.get("ruleId")
+            rule_id = result.get("ruleId") or result.get("rule", {}).get("id")
             message = result.get("message", {}).get("text")
 
             rule_metadata = rules_index.get(rule_id, {})
@@ -50,11 +57,14 @@ def parse_sarif(file_path: str):
                     cwe_list.append(cwe_number)
 
             # Extract severity
-            severity = rule_metadata.get("defaultConfiguration", {}).get("level")
+            severity = (
+                rule_metadata.get("defaultConfiguration", {}).get("level")
+                or result.get("level")
+            )
             security_severity = properties.get("security-severity")
 
             # Extract location
-            file_path = None
+            location_file_path = None
             line_number = None
 
             locations = result.get("locations", [])
@@ -63,7 +73,7 @@ def parse_sarif(file_path: str):
                 artifact_location = physical_location.get("artifactLocation", {})
                 region = physical_location.get("region", {})
 
-                file_path = artifact_location.get("uri")
+                location_file_path = artifact_location.get("uri")
                 line_number = region.get("startLine")
 
             findings.append({
@@ -72,7 +82,7 @@ def parse_sarif(file_path: str):
                 "cwe": cwe_list,
                 "severity": severity,
                 "security_severity": security_severity,
-                "file": file_path,
+                "file": location_file_path,
                 "line": line_number
             })
 

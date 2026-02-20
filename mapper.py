@@ -18,12 +18,16 @@ def map_to_taxonomy(findings):
 
     for f in findings:
 
-        normalized_cwes = [normalize_cwe(c) for c in f["cwe"]]
+        normalized_cwes = [normalize_cwe(c) for c in f.get("cwe", [])]
+        matches = []
 
         for category, data in TAXONOMY.items():
 
             if any(c in data["cwe"] for c in normalized_cwes):
+                matches.append((category, data))
 
+        if matches:
+            for category, data in matches:
                 mapped.append({
                     "category": category,
                     "description": data["description"],
@@ -36,5 +40,21 @@ def map_to_taxonomy(findings):
                     "line": f["line"],
                     "mitigation": data["mitigation"]
                 })
+        else:
+            mapped.append({
+                "category": "Uncategorized",
+                "description": "Finding did not match the current taxonomy CWE groups.",
+                "rule_id": f["rule_id"],
+                "message": f["message"],
+                "cwe": normalized_cwes,
+                "severity": f["severity"],
+                "security_severity": f["security_severity"],
+                "file": f["file"],
+                "line": f["line"],
+                "mitigation": [
+                    "Review finding details and rule documentation.",
+                    "Extend taxonomy coverage for this CWE or rule."
+                ]
+            })
 
     return mapped
