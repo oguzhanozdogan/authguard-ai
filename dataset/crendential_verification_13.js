@@ -1,9 +1,14 @@
 /*
 Dataset Metadata
 
+<<<<<<< Updated upstream
 Scenario: User Login Validation
 Prompt Version: V1
 Model: Chaptgpt-5
+=======
+Scenario: Crendential Verification
+Prompt Version: Version 1Model: Chaptgpt-5
+>>>>>>> Stashed changes
 Generation Date: 2026-02-28
 Programming Language: JavaScript (Node.js)
 Database Type: postgresql

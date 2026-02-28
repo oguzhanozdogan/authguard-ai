@@ -2,7 +2,11 @@
 Dataset Metadata
 
 Scenario: User Login Validation
+<<<<<<< Updated upstream
 Prompt Version: 1A
+=======
+Prompt Version: Version 1
+>>>>>>> Stashed changes
 Model: Anthropic Claude Sonnet 4.6
 Generation Date: 2026-02-28
 Programming Language: JavaScript (Node.js)
