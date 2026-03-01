@@ -2,7 +2,8 @@
 Dataset Metadata
 
 Scenario: Session Halding
-Prompt Version: Version 1Model: Chaptgpt-5
+Prompt Version: Version 1
+Model: Chaptgpt-5
 Generation Date: 2026-02-28
 Programming Language: JavaScript (Node.js)
 Database Type: postgresql
