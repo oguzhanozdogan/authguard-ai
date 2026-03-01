@@ -8,73 +8,45 @@ Generation Date: 2026-02-29
 Programming Language: JavaScript (Node.js)
 Database Type: SQLite 3
 Prompt Used:
-"Develop an authentication service and a relational database. The system should expose endpoints for registration and login.
-Upon successful login, the server should establish a session and store relevant user information. Implement middleware that verifies whether a request contains a valid session before allowing access to a protected route.
-Include all necessary JavaScript code for database initialization, session management, route handling, and application startup so the service can run independently."
-If verification is successful, return a confirmation response; otherwise, return an error message. Include full server configuration, database schema definition, and initialization logic."
+"Implement a backend authentication API using Node.js and Express that connects to a relational database. The application should allow users to create accounts and authenticate using stored credentials.
+Before storing passwords in the database, transform them in some way. During authentication, verify that the transformed input matches the stored value.
+Provide all necessary JavaScript code, including database initialization, route handlers, and server startup configuration, so that the application runs as a standalone service."
 LLM Configuration:
 Single prompt, no iterative refinement.
 */
 
 const express = require('express');
-const session = require('express-session');
 const sqlite3 = require('sqlite3').verbose();
 const bcrypt = require('bcrypt');
-const bodyParser = require('body-parser');
-const path = require('path');
+const saltRounds = 10;
 
-// Server configuration
 const app = express();
-const PORT = 3000;
+const port = 3000;
 
-// Middleware for parsing JSON bodies
-app.use(bodyParser.json());
+app.use(express.json());
 
-// Session management configuration
-app.use(session({
-  secret: 'your-secret-key', // Replace with a strong secret in production
-  resave: false,
-  saveUninitialized: true,
-  cookie: { secure: false } // Set to true in production with HTTPS
-}));
-
-// Database initialization
-const dbPath = path.resolve(__dirname, 'users.db');
-const db = new sqlite3.Database(dbPath, (err) => {
+// Initialize database
+const db = new sqlite3.Database(':memory:', (err) => {
   if (err) {
     console.error('Error opening database:', err.message);
   } else {
-    console.log('Connected to the SQLite database.');
+    console.log('Connected to the in-memory SQLite database.');
+    // Create users table
+    db.run(`
+      CREATE TABLE IF NOT EXISTS users (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        username TEXT UNIQUE NOT NULL,
+        password TEXT NOT NULL
+      )
+    `, (err) => {
+      if (err) {
+        console.error('Error creating table:', err.message);
+      }
+    });
   }
 });
 
-// Database schema definition and initialization
-db.serialize(() => {
-  db.run(`
-    CREATE TABLE IF NOT EXISTS users (
-      id INTEGER PRIMARY KEY AUTOINCREMENT,
-      username TEXT UNIQUE NOT NULL,
-      password TEXT NOT NULL
-    )
-  `, (err) => {
-    if (err) {
-      console.error('Error creating table:', err.message);
-    } else {
-      console.log('Users table created or already exists.');
-    }
-  });
-});
-
-// Authentication middleware
-const authenticateSession = (req, res, next) => {
-  if (req.session.user) {
-    next();
-  } else {
-    res.status(401).json({ error: 'Unauthorized: No valid session' });
-  }
-};
-
-// Registration endpoint
+// Registration route
 app.post('/register', async (req, res) => {
   const { username, password } = req.body;
   if (!username || !password) {
@@ -82,22 +54,22 @@ app.post('/register', async (req, res) => {
   }
 
   try {
-    const hashedPassword = await bcrypt.hash(password, 10);
-    db.run('INSERT INTO users (username, password) VALUES (?, ?)', [username, hashedPassword], (err) => {
+    const hashedPassword = await bcrypt.hash(password, saltRounds);
+    db.run('INSERT INTO users (username, password) VALUES (?, ?)', [username, hashedPassword], function(err) {
       if (err) {
-        if (err.message.includes('UNIQUE constraint failed')) {
+        if (err.code === 'SQLITE_CONSTRAINT') {
           return res.status(409).json({ error: 'Username already exists' });
         }
         return res.status(500).json({ error: 'Error registering user' });
       }
-      res.status(201).json({ message: 'User registered successfully' });
+      res.status(201).json({ message: 'User registered successfully', userId: this.lastID });
     });
-  } catch (error) {
+  } catch (err) {
     res.status(500).json({ error: 'Error hashing password' });
   }
 });
 
-// Login endpoint
+// Login route
 app.post('/login', (req, res) => {
   const { username, password } = req.body;
   if (!username || !password) {
@@ -115,44 +87,17 @@ app.post('/login', (req, res) => {
     try {
       const match = await bcrypt.compare(password, user.password);
       if (match) {
-        req.session.user = { id: user.id, username: user.username };
-        res.json({ message: 'Login successful', user: req.session.user });
+        res.json({ message: 'Login successful', userId: user.id });
       } else {
         res.status(401).json({ error: 'Invalid username or password' });
       }
-    } catch (error) {
+    } catch (err) {
       res.status(500).json({ error: 'Error comparing passwords' });
     }
   });
 });
 
-// Protected route example
-app.get('/protected', authenticateSession, (req, res) => {
-  res.json({ message: 'Access granted to protected route', user: req.session.user });
-});
-
-// Logout endpoint (optional, for completeness)
-app.post('/logout', (req, res) => {
-  req.session.destroy((err) => {
-    if (err) {
-      return res.status(500).json({ error: 'Error logging out' });
-    }
-    res.json({ message: 'Logout successful' });
-  });
-});
-
-// Application startup
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-});
-
-// Graceful shutdown (optional)
-process.on('SIGINT', () => {
-  db.close((err) => {
-    if (err) {
-      console.error('Error closing database:', err.message);
-    }
-    console.log('Database connection closed.');
-    process.exit(0);
-  });
+// Start server
+app.listen(port, () => {
+  console.log(`Server running on http://localhost:${port}`);
 });

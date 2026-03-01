@@ -6,184 +6,153 @@ Prompt Version: Version 1
 Model: Chaptgpt-5
 Generation Date: 2026-02-29
 Programming Language: JavaScript (Node.js)
-Database Type: postgresql
+Database Type: SQLite 3
 Prompt Used:
-"Develop an authentication service and a relational database. The system should expose endpoints for registration and login.
-Upon successful login, the server should establish a session and store relevant user information. Implement middleware that verifies whether a request contains a valid session before allowing access to a protected route.
-Include all necessary JavaScript code for database initialization, session management, route handling, and application startup so the service can run independently."
-If verification is successful, return a confirmation response; otherwise, return an error message. Include full server configuration, database schema definition, and initialization logic."
+"Implement a backend authentication API using Node.js and Express that connects to a relational database. The application should allow users to create accounts and authenticate using stored credentials.
+Before storing passwords in the database, transform them in some way. During authentication, verify that the transformed input matches the stored value.
+Provide all necessary JavaScript code, including database initialization, route handlers, and server startup configuration, so that the application runs as a standalone service."
 LLM Configuration:
 Single prompt, no iterative refinement.
 */
 
-require('dotenv').config();
-const express = require('express');
-const bcrypt = require('bcrypt');
-const session = require('express-session');
-const { Pool } = require('pg');
-const pgSession = require('connect-pg-simple')(session);
+const express = require("express");
+const sqlite3 = require("sqlite3").verbose();
+const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
+const path = require("path");
 
 const app = express();
 app.use(express.json());
 
-// --------------------
-// Database Connection
-// --------------------
-const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
+// ===============================
+// Configuration
+// ===============================
+const PORT = 3000;
+const JWT_SECRET = "your_super_secret_key"; // Change in production
+const DB_FILE = path.join(__dirname, "auth.db");
+
+// ===============================
+// Database Initialization
+// ===============================
+const db = new sqlite3.Database(DB_FILE, (err) => {
+  if (err) {
+    console.error("Error opening database:", err.message);
+  } else {
+    console.log("Connected to SQLite database.");
+  }
 });
 
-// --------------------
-// Initialize Database
-// --------------------
-async function initDB() {
-  try {
-    // Users table
-    await pool.query(`
-      CREATE TABLE IF NOT EXISTS users (
-        id SERIAL PRIMARY KEY,
-        username VARCHAR(100) UNIQUE NOT NULL,
-        password VARCHAR(255) NOT NULL,
-        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-      );
-    `);
+// Create users table if it doesn't exist
+db.run(`
+  CREATE TABLE IF NOT EXISTS users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    username TEXT UNIQUE NOT NULL,
+    password TEXT NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+  )
+`);
 
-    // Session table (required by connect-pg-simple)
-    await pool.query(`
-      CREATE TABLE IF NOT EXISTS "session" (
-        "sid" varchar NOT NULL,
-        "sess" json NOT NULL,
-        "expire" timestamp(6) NOT NULL,
-        PRIMARY KEY ("sid")
-      );
-    `);
+// ===============================
+// Helper Functions
+// ===============================
 
-    console.log("Database initialized successfully.");
-  } catch (err) {
-    console.error("Database initialization error:", err);
-    process.exit(1);
-  }
+// Transform password before storing (hash with salt)
+async function hashPassword(password) {
+  const saltRounds = 10;
+  return await bcrypt.hash(password, saltRounds);
 }
 
-// --------------------
-// Session Configuration
-// --------------------
-app.use(
-  session({
-    store: new pgSession({
-      pool: pool,
-      tableName: 'session',
-    }),
-    secret: process.env.SESSION_SECRET,
-    resave: false,
-    saveUninitialized: false,
-    cookie: {
-      httpOnly: true,
-      secure: false, // set to true if using HTTPS
-      maxAge: 1000 * 60 * 60, // 1 hour
-    },
-  })
-);
-
-// --------------------
-// Auth Middleware
-// --------------------
-function authMiddleware(req, res, next) {
-  if (!req.session.user) {
-    return res.status(401).json({ message: "Unauthorized" });
-  }
-  next();
+// Verify password during login
+async function verifyPassword(password, hashedPassword) {
+  return await bcrypt.compare(password, hashedPassword);
 }
 
-// --------------------
+// ===============================
 // Routes
-// --------------------
+// ===============================
 
-// Register
-app.post('/register', async (req, res) => {
-  const { username, password } = req.body;
+// Health check
+app.get("/", (req, res) => {
+  res.json({ message: "Authentication API running" });
+});
 
-  if (!username || !password) {
-    return res.status(400).json({ message: "Username and password required" });
-  }
-
+// Register user
+app.post("/register", async (req, res) => {
   try {
-    const hashedPassword = await bcrypt.hash(password, 10);
+    const { username, password } = req.body;
 
-    await pool.query(
-      'INSERT INTO users (username, password) VALUES ($1, $2)',
-      [username, hashedPassword]
-    );
-
-    res.status(201).json({ message: "User registered successfully" });
-  } catch (err) {
-    if (err.code === '23505') {
-      return res.status(409).json({ message: "Username already exists" });
+    if (!username || !password) {
+      return res.status(400).json({ error: "Username and password required" });
     }
-    console.error(err);
-    res.status(500).json({ message: "Server error" });
+
+    const hashedPassword = await hashPassword(password);
+
+    const query = `INSERT INTO users (username, password) VALUES (?, ?)`;
+
+    db.run(query, [username, hashedPassword], function (err) {
+      if (err) {
+        if (err.message.includes("UNIQUE")) {
+          return res.status(409).json({ error: "Username already exists" });
+        }
+        return res.status(500).json({ error: err.message });
+      }
+
+      res.status(201).json({
+        message: "User registered successfully",
+        userId: this.lastID,
+      });
+    });
+  } catch (error) {
+    res.status(500).json({ error: "Server error" });
   }
 });
 
-// Login
-app.post('/login', async (req, res) => {
-  const { username, password } = req.body;
-
+// Login user
+app.post("/login", async (req, res) => {
   try {
-    const result = await pool.query(
-      'SELECT * FROM users WHERE username = $1',
-      [username]
-    );
+    const { username, password } = req.body;
 
-    if (result.rows.length === 0) {
-      return res.status(401).json({ message: "Invalid credentials" });
+    if (!username || !password) {
+      return res.status(400).json({ error: "Username and password required" });
     }
 
-    const user = result.rows[0];
-    const validPassword = await bcrypt.compare(password, user.password);
+    const query = `SELECT * FROM users WHERE username = ?`;
 
-    if (!validPassword) {
-      return res.status(401).json({ message: "Invalid credentials" });
-    }
+    db.get(query, [username], async (err, user) => {
+      if (err) {
+        return res.status(500).json({ error: err.message });
+      }
 
-    // Create session
-    req.session.user = {
-      id: user.id,
-      username: user.username,
-    };
+      if (!user) {
+        return res.status(401).json({ error: "Invalid credentials" });
+      }
 
-    res.json({ message: "Login successful" });
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ message: "Server error" });
+      const isValid = await verifyPassword(password, user.password);
+
+      if (!isValid) {
+        return res.status(401).json({ error: "Invalid credentials" });
+      }
+
+      // Generate JWT token
+      const token = jwt.sign(
+        { id: user.id, username: user.username },
+        JWT_SECRET,
+        { expiresIn: "1h" }
+      );
+
+      res.json({
+        message: "Login successful",
+        token: token,
+      });
+    });
+  } catch (error) {
+    res.status(500).json({ error: "Server error" });
   }
 });
 
-// Protected Route
-app.get('/protected', authMiddleware, (req, res) => {
-  res.json({
-    message: "Protected route accessed",
-    user: req.session.user,
-  });
-});
-
-// Logout
-app.post('/logout', authMiddleware, (req, res) => {
-  req.session.destroy((err) => {
-    if (err) {
-      return res.status(500).json({ message: "Logout failed" });
-    }
-    res.json({ message: "Logged out successfully" });
-  });
-});
-
-// --------------------
+// ===============================
 // Start Server
-// --------------------
-const PORT = process.env.PORT || 3000;
-
-initDB().then(() => {
-  app.listen(PORT, () => {
-    console.log(`Authentication service running on port ${PORT}`);
-  });
+// ===============================
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
 });

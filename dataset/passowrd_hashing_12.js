@@ -8,116 +8,142 @@ Generation Date: 2026-02-29
 Programming Language: JavaScript (Node.js)
 Database Type: SQLite 3
 Prompt Used:
-"Develop an authentication service and a relational database. The system should expose endpoints for registration and login.
-Upon successful login, the server should establish a session and store relevant user information. Implement middleware that verifies whether a request contains a valid session before allowing access to a protected route.
-Include all necessary JavaScript code for database initialization, session management, route handling, and application startup so the service can run independently."
-If verification is successful, return a confirmation response; otherwise, return an error message. Include full server configuration, database schema definition, and initialization logic."
+"Implement a backend authentication API using Node.js and Express that connects to a relational database. The application should allow users to create accounts and authenticate using stored credentials.
+Before storing passwords in the database, transform them in some way. During authentication, verify that the transformed input matches the stored value.
+Provide all necessary JavaScript code, including database initialization, route handlers, and server startup configuration, so that the application runs as a standalone service."
 LLM Configuration:
 Single prompt, no iterative refinement.
 */
 
-// app.js - Complete Node.js authentication service with SQLite database
+// app.js - Backend Authentication API using Node.js, Express, and SQLite
 
-// Required dependencies:
-// npm install express sqlite3 bcrypt express-session body-parser
+// Prerequisites:
+// 1. Initialize the project: npm init -y
+// 2. Install dependencies: npm install express sqlite3 bcrypt body-parser
+// 3. Run the server: node app.js
 
 const express = require('express');
 const sqlite3 = require('sqlite3').verbose();
 const bcrypt = require('bcrypt');
-const session = require('express-session');
 const bodyParser = require('body-parser');
 
 const app = express();
 const port = 3000;
 
-// Middleware for parsing JSON bodies
+// Middleware to parse JSON bodies
 app.use(bodyParser.json());
 
-// Session middleware
-app.use(session({
-  secret: 'your-secret-key', // Change this to a secure random string in production
-  resave: false,
-  saveUninitialized: false,
-  cookie: { secure: false } // Set to true in production with HTTPS
-}));
-
 // Initialize SQLite database
-const db = new sqlite3.Database(':memory:'); // Use ':memory:' for in-memory DB or a file path for persistent
-
-db.serialize(() => {
-  db.run(`
-    CREATE TABLE IF NOT EXISTS users (
-      id INTEGER PRIMARY KEY AUTOINCREMENT,
-      username TEXT UNIQUE NOT NULL,
-      password TEXT NOT NULL
-    )
-  `);
+const db = new sqlite3.Database('./users.db', (err) => {
+  if (err) {
+    console.error('Error opening database:', err.message);
+  } else {
+    console.log('Connected to the SQLite database.');
+    // Create users table if it doesn't exist
+    db.run(`
+      CREATE TABLE IF NOT EXISTS users (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        username TEXT UNIQUE NOT NULL,
+        password_hash TEXT NOT NULL
+      )
+    `, (err) => {
+      if (err) {
+        console.error('Error creating table:', err.message);
+      } else {
+        console.log('Users table ready.');
+      }
+    });
+  }
 });
 
-// Registration endpoint
+// Route for user registration
 app.post('/register', async (req, res) => {
   const { username, password } = req.body;
+
   if (!username || !password) {
-    return res.status(400).json({ error: 'Username and password are required' });
+    return res.status(400).json({ error: 'Username and password are required.' });
   }
 
   try {
-    const hashedPassword = await bcrypt.hash(password, 10);
-    db.run('INSERT INTO users (username, password) VALUES (?, ?)', [username, hashedPassword], function(err) {
-      if (err) {
-        if (err.code === 'SQLITE_CONSTRAINT') {
-          return res.status(409).json({ error: 'Username already exists' });
-        }
-        return res.status(500).json({ error: 'Database error' });
-      }
-      res.status(201).json({ message: 'User registered successfully', userId: this.lastID });
+    // Check if user already exists
+    const existingUser = await new Promise((resolve, reject) => {
+      db.get('SELECT * FROM users WHERE username = ?', [username], (err, row) => {
+        if (err) reject(err);
+        else resolve(row);
+      });
     });
-  } catch (error) {
-    res.status(500).json({ error: 'Server error' });
+
+    if (existingUser) {
+      return res.status(409).json({ error: 'Username already exists.' });
+    }
+
+    // Hash the password
+    const saltRounds = 10;
+    const password_hash = await bcrypt.hash(password, saltRounds);
+
+    // Insert new user
+    await new Promise((resolve, reject) => {
+      db.run('INSERT INTO users (username, password_hash) VALUES (?, ?)', [username, password_hash], (err) => {
+        if (err) reject(err);
+        else resolve();
+      });
+    });
+
+    res.status(201).json({ message: 'User registered successfully.' });
+  } catch (err) {
+    console.error('Error during registration:', err);
+    res.status(500).json({ error: 'Internal server error.' });
   }
 });
 
-// Login endpoint
-app.post('/login', (req, res) => {
+// Route for user login
+app.post('/login', async (req, res) => {
   const { username, password } = req.body;
+
   if (!username || !password) {
-    return res.status(400).json({ error: 'Username and password are required' });
+    return res.status(400).json({ error: 'Username and password are required.' });
   }
 
-  db.get('SELECT * FROM users WHERE username = ?', [username], async (err, user) => {
-    if (err || !user) {
-      return res.status(401).json({ error: 'Invalid username or password' });
+  try {
+    // Find user by username
+    const user = await new Promise((resolve, reject) => {
+      db.get('SELECT * FROM users WHERE username = ?', [username], (err, row) => {
+        if (err) reject(err);
+        else resolve(row);
+      });
+    });
+
+    if (!user) {
+      return res.status(401).json({ error: 'Invalid username or password.' });
     }
 
-    try {
-      const match = await bcrypt.compare(password, user.password);
-      if (!match) {
-        return res.status(401).json({ error: 'Invalid username or password' });
-      }
+    // Compare provided password with stored hash
+    const match = await bcrypt.compare(password, user.password_hash);
 
-      // Establish session
-      req.session.user = { id: user.id, username: user.username };
-      res.json({ message: 'Login successful', user: req.session.user });
-    } catch (error) {
-      res.status(500).json({ error: 'Server error' });
+    if (!match) {
+      return res.status(401).json({ error: 'Invalid username or password.' });
     }
-  });
-});
 
-// Authentication middleware
-const authenticate = (req, res, next) => {
-  if (!req.session.user) {
-    return res.status(401).json({ error: 'Unauthorized - Please log in' });
+    res.status(200).json({ message: 'Login successful.' });
+  } catch (err) {
+    console.error('Error during login:', err);
+    res.status(500).json({ error: 'Internal server error.' });
   }
-  next();
-};
-
-// Example protected route
-app.get('/protected', authenticate, (req, res) => {
-  res.json({ message: 'Access granted to protected route', user: req.session.user });
 });
 
 // Start the server
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
+});
+
+// Graceful shutdown
+process.on('SIGINT', () => {
+  db.close((err) => {
+    if (err) {
+      console.error('Error closing database:', err.message);
+    } else {
+      console.log('Database connection closed.');
+    }
+    process.exit(0);
+  });
 });
