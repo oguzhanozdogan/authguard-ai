@@ -12,6 +12,13 @@ from mapper import map_to_taxonomy
 from reporter import generate_report
 
 
+def _positive_int(value: str) -> int:
+    parsed = int(value)
+    if parsed <= 0:
+        raise argparse.ArgumentTypeError("Value must be a positive integer.")
+    return parsed
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Run AuthGuard-AI pipeline: CodeQL -> SARIF parser -> taxonomy report."
@@ -25,6 +32,18 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Disable CodeQL query pack download during analysis.",
     )
+    parser.add_argument(
+        "--ram",
+        type=_positive_int,
+        default=None,
+        help="Maximum RAM for CodeQL in MB (for example, 3072 or 4096).",
+    )
+    parser.add_argument(
+        "--threads",
+        type=_positive_int,
+        default=None,
+        help="Number of CodeQL threads to use.",
+    )
     return parser.parse_args()
 
 
@@ -33,13 +52,20 @@ def main() -> int:
 
     try:
         print("[1] Creating CodeQL database...")
-        create_codeql_database(args.source_path, args.db_path)
+        create_codeql_database(
+            args.source_path,
+            args.db_path,
+            ram=args.ram,
+            threads=args.threads,
+        )
 
         print("[2] Running analysis...")
         run_analysis(
             args.db_path,
             args.sarif_path,
             download=not args.no_download,
+            ram=args.ram,
+            threads=args.threads,
         )
 
         print("[3] Parsing results...")

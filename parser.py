@@ -106,7 +106,6 @@ def parse_sarif(file_path: str | Path) -> list[Finding]:
 
                 location_file_path = artifact_location.get("uri")
                 line_number = region.get("startLine")
-
             findings.append(
                 {
                     "rule_id": rule_id,

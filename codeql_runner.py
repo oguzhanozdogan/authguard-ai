@@ -27,7 +27,25 @@ def _run_command(command: list[str]) -> None:
         raise RuntimeError(f"CodeQL command failed: {' '.join(command)}\n{output}") from exc
 
 
-def create_codeql_database(source_path: str | Path, db_path: str | Path) -> None:
+def _append_resource_flags(
+    command: list[str],
+    *,
+    ram: int | None = None,
+    threads: int | None = None,
+) -> None:
+    if ram is not None:
+        command.append(f"--ram={ram}")
+    if threads is not None:
+        command.append(f"--threads={threads}")
+
+
+def create_codeql_database(
+    source_path: str | Path,
+    db_path: str | Path,
+    *,
+    ram: int | None = None,
+    threads: int | None = None,
+) -> None:
     source = Path(source_path)
     db = Path(db_path)
     if not source.exists():
@@ -42,6 +60,7 @@ def create_codeql_database(source_path: str | Path, db_path: str | Path) -> None
         f"--language={LANGUAGE}",
         f"--source-root={source}",
     ]
+    _append_resource_flags(command, ram=ram, threads=threads)
 
     _run_command(command)
 
@@ -51,6 +70,8 @@ def run_analysis(
     output_file: str | Path,
     *,
     download: bool = True,
+    ram: int | None = None,
+    threads: int | None = None,
 ) -> None:
     db = Path(db_path)
     output = Path(output_file)
@@ -66,6 +87,7 @@ def run_analysis(
         "--format=sarifv2.1.0",
         f"--output={output}",
     ]
+    _append_resource_flags(command, ram=ram, threads=threads)
     if download:
         command.append("--download")
 

@@ -106,6 +106,7 @@ Optional arguments:
 ```powershell
 python main.py --source-path dataset --db-path codeql_db --sarif-path results.sarif --report-path reports/report.json
 python main.py --no-download
+python main.py --no-download --ram 4096 --threads 2
 ```
 
 `python main.py` runs CodeQL with query pack download enabled (default), which can
@@ -114,6 +115,9 @@ fetch updates and may change findings over time.
 `python main.py --no-download` disables query pack download and uses local packs
 only, which is faster and more reproducible but may fail if packs are not already
 installed.
+
+`--ram` sets the CodeQL memory limit in MB and can help avoid Java heap OOM errors.
+`--threads` limits parallelism, which can reduce memory pressure on smaller machines.
 
 ## Testing
 
@@ -132,10 +136,19 @@ Example report item:
 
 ```json
 {
-  "category": "Injection",
-  "rule_id": "js/sql-injection",
-  "cwe": ["CWE-89"],
-  "severity": "error"
+  "credential_verification": [
+    {
+      "file": "dataset/credential_verification_1.js",
+      "category": "Injection",
+      "rule_id": "js/sql-injection"
+    }
+  ],
+  "input_processing": [],
+  "password_hashing": [],
+  "session": [],
+  "token_management": [],
+  "user_login_validation": [],
+  "other": []
 }
 ```
 

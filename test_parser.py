@@ -61,6 +61,39 @@ class TestPipelineComponents(unittest.TestCase):
         self.assertEqual("sample.js", findings[0]["file"])
         self.assertEqual(25, findings[0]["line"])
 
+    def test_parse_sarif_does_not_add_dataset_fields(self) -> None:
+        sarif = {
+            "runs": [
+                {
+                    "tool": {"driver": {"rules": [{"id": "js/sql-injection"}]}},
+                    "results": [
+                        {
+                            "ruleId": "js/sql-injection",
+                            "message": {"text": "test"},
+                            "locations": [
+                                {
+                                    "physicalLocation": {
+                                        "artifactLocation": {
+                                            "uri": "dataset/crendential_verification_1.js"
+                                        }
+                                    }
+                                }
+                            ],
+                        }
+                    ],
+                }
+            ]
+        }
+
+        with tempfile.TemporaryDirectory() as tmp:
+            sarif_path = Path(tmp) / "results.sarif"
+            sarif_path.write_text(json.dumps(sarif), encoding="utf-8")
+
+            findings = parse_sarif(sarif_path)
+
+        self.assertNotIn("dataset_name", findings[0])
+        self.assertNotIn("dataset_category", findings[0])
+
     def test_mapper_normalizes_cwes_for_taxonomy_matching(self) -> None:
         findings = [
             {
@@ -78,9 +111,16 @@ class TestPipelineComponents(unittest.TestCase):
         self.assertEqual(1, len(mapped))
         self.assertEqual("Injection", mapped[0]["category"])
         self.assertEqual(["CWE-89"], mapped[0]["cwe"])
+        self.assertNotIn("dataset_name", mapped[0])
+        self.assertNotIn("dataset_category", mapped[0])
 
     def test_reporter_creates_output_directory(self) -> None:
-        results = [{"category": "Test"}]
+        results = [
+            {
+                "category": "Test",
+                "file": "dataset/credential_verification_1.js",
+            }
+        ]
 
         with tempfile.TemporaryDirectory() as tmp:
             output_path = Path(tmp) / "nested" / "report.json"
@@ -89,7 +129,18 @@ class TestPipelineComponents(unittest.TestCase):
             self.assertEqual(output_path, written_path)
             self.assertTrue(output_path.exists())
             stored = json.loads(output_path.read_text(encoding="utf-8"))
-            self.assertEqual(results, stored)
+            self.assertIn("credential_verification", stored)
+            self.assertIn("input_processing", stored)
+            self.assertIn("password_hashing", stored)
+            self.assertIn("session", stored)
+            self.assertIn("token_management", stored)
+            self.assertIn("user_login_validation", stored)
+            self.assertEqual(
+                "dataset/credential_verification_1.js",
+                stored["credential_verification"][0]["file"],
+            )
+            self.assertNotIn("dataset_name", stored["credential_verification"][0])
+            self.assertNotIn("dataset_category", stored["credential_verification"][0])
 
 
 if __name__ == "__main__":
