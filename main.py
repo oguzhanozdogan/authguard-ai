@@ -69,7 +69,7 @@ def main() -> int:
         )
 
         print("[3] Parsing results...")
-        findings = parse_sarif(args.sarif_path)
+        findings = parse_sarif(args.sarif_path, source_root=args.source_path)
 
         print("[4] Mapping to taxonomy...")
         mapped = map_to_taxonomy(findings)

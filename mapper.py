@@ -53,6 +53,7 @@ def map_to_taxonomy(findings):
                     "security_severity": f["security_severity"],
                     "file": f["file"],
                     "line": f["line"],
+                    "model": f.get("model"),
                     "mitigation": data["mitigation"]
                 })
         else:
@@ -66,6 +67,7 @@ def map_to_taxonomy(findings):
                 "security_severity": f["security_severity"],
                 "file": f["file"],
                 "line": f["line"],
+                "model": f.get("model"),
                 "mitigation": [
                     "Review finding details and rule documentation.",
                     "Extend taxonomy coverage for this CWE or rule."

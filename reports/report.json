@@ -1,0 +1,5104 @@
+{
+  "credential_verification": [
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/polynomial-redos",
+      "message": "This [regular expression](1) that depends on [a user-provided value](2) may run slow on strings starting with '!@!.' and with many repetitions of '!.'.",
+      "cwe": [
+        "CWE-1333",
+        "CWE-730",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_11.js",
+      "line": 110,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/polynomial-redos",
+      "message": "This [regular expression](1) that depends on [a user-provided value](2) may run slow on strings starting with '!@!.' and with many repetitions of '!.'.",
+      "cwe": [
+        "CWE-1333",
+        "CWE-730",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_3.js",
+      "line": 94,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/polynomial-redos",
+      "message": "This [regular expression](1) that depends on [a user-provided value](2) may run slow on strings starting with '!@!.' and with many repetitions of '!.'.",
+      "cwe": [
+        "CWE-1333",
+        "CWE-730",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_3.js",
+      "line": 103,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/polynomial-redos",
+      "message": "This [regular expression](1) that depends on [a user-provided value](2) may run slow on strings starting with '!@!.' and with many repetitions of '!.'.",
+      "cwe": [
+        "CWE-1333",
+        "CWE-730",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_7.js",
+      "line": 153,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.\nThis route handler performs [a database access](2), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_1.js",
+      "line": 64,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_10.js",
+      "line": 60,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_1.js",
+      "line": 103,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_10.js",
+      "line": 88,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.\nThis route handler performs [a database access](2), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_12.js",
+      "line": 64,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_12.js",
+      "line": 101,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_11.js",
+      "line": 216,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_11.js",
+      "line": 260,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_13.js",
+      "line": 87,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.\nThis route handler performs [a database access](2), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_13.js",
+      "line": 106,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.\nThis route handler performs [authorization](2), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_13.js",
+      "line": 145,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_13.js",
+      "line": 176,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_14.js",
+      "line": 201,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.\nThis route handler performs [a database access](2), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_16.js",
+      "line": 56,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_16.js",
+      "line": 88,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_2.js",
+      "line": 64,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_2.js",
+      "line": 89,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_4.js",
+      "line": 48,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_4.js",
+      "line": 80,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_3.js",
+      "line": 162,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_3.js",
+      "line": 245,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.\nThis route handler performs [a database access](2), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_5.js",
+      "line": 58,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_5.js",
+      "line": 97,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_5.js",
+      "line": 163,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_6.js",
+      "line": 87,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_6.js",
+      "line": 112,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_6.js",
+      "line": 142,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_8.js",
+      "line": 90,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_8.js",
+      "line": 119,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_8.js",
+      "line": 148,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_8.js",
+      "line": 148,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_7.js",
+      "line": 248,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_9.js",
+      "line": 62,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_9.js",
+      "line": 102,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_7.js",
+      "line": 278,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_7.js",
+      "line": 290,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_7.js",
+      "line": 301,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_7.js",
+      "line": 308,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.\nThis route handler performs [a database access](2), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_7.js",
+      "line": 308,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_7.js",
+      "line": 337,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "crendential_verification_7.js",
+      "line": 337,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/log-injection",
+      "message": "Log entry depends on a [user-provided value](1).",
+      "cwe": [
+        "CWE-117"
+      ],
+      "severity": "error",
+      "security_severity": "6.1",
+      "file": "crendential_verification_3.js",
+      "line": 237,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/assignment-to-constant",
+      "message": "Assignment to variable pool, which is [declared](1) constant.",
+      "cwe": [],
+      "severity": "error",
+      "security_severity": null,
+      "file": "crendential_verification_13.js",
+      "line": 27,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/assignment-to-constant",
+      "message": "Assignment to variable jwt, which is [declared](1) constant.",
+      "cwe": [],
+      "severity": "error",
+      "security_severity": null,
+      "file": "crendential_verification_13.js",
+      "line": 33,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/assignment-to-constant",
+      "message": "Assignment to variable authenticateToken, which is [declared](1) constant.",
+      "cwe": [],
+      "severity": "error",
+      "security_severity": null,
+      "file": "crendential_verification_13.js",
+      "line": 36,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/assignment-to-constant",
+      "message": "Assignment to variable authorizeRole, which is [declared](1) constant.",
+      "cwe": [],
+      "severity": "error",
+      "security_severity": null,
+      "file": "crendential_verification_13.js",
+      "line": 49,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/assignment-to-constant",
+      "message": "Assignment to variable jwt, which is [declared](1) constant.",
+      "cwe": [],
+      "severity": "error",
+      "security_severity": null,
+      "file": "crendential_verification_13.js",
+      "line": 62,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/assignment-to-constant",
+      "message": "Assignment to variable pool, which is [declared](1) constant.",
+      "cwe": [],
+      "severity": "error",
+      "security_severity": null,
+      "file": "crendential_verification_13.js",
+      "line": 63,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/use-before-declaration",
+      "message": "Variable 'authenticateToken' is used before its [declaration](1).",
+      "cwe": [],
+      "severity": "warning",
+      "security_severity": null,
+      "file": "crendential_verification_13.js",
+      "line": 58,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/use-before-declaration",
+      "message": "Variable 'authorizeRole' is used before its [declaration](1).",
+      "cwe": [],
+      "severity": "warning",
+      "security_severity": null,
+      "file": "crendential_verification_13.js",
+      "line": 58,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/unused-local-variable",
+      "message": "Unused variable fs.",
+      "cwe": [],
+      "severity": "note",
+      "security_severity": null,
+      "file": "crendential_verification_11.js",
+      "line": 45,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    }
+  ],
+  "input_processing": [
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/polynomial-redos",
+      "message": "This [regular expression](1) that depends on [a user-provided value](2) may run slow on strings with many repetitions of '!.'.",
+      "cwe": [
+        "CWE-1333",
+        "CWE-730",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "input_processing_11.js",
+      "line": 107,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/polynomial-redos",
+      "message": "This [regular expression](1) that depends on [a user-provided value](2) may run slow on strings with many repetitions of '!.'.",
+      "cwe": [
+        "CWE-1333",
+        "CWE-730",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "input_processing_12.js",
+      "line": 84,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/polynomial-redos",
+      "message": "This [regular expression](1) that depends on [a user-provided value](2) may run slow on strings with many repetitions of '!.'.",
+      "cwe": [
+        "CWE-1333",
+        "CWE-730",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "input_processing_13.js",
+      "line": 140,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/polynomial-redos",
+      "message": "This [regular expression](1) that depends on [a user-provided value](2) may run slow on strings starting with '!@!.' and with many repetitions of '!.'.",
+      "cwe": [
+        "CWE-1333",
+        "CWE-730",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "input_processing_5.js",
+      "line": 79,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Injection",
+      "description": "Injection vulnerabilities caused by improper input handling.",
+      "rule_id": "js/sql-injection",
+      "message": "This query object depends on a [user-provided value](1).",
+      "cwe": [
+        "CWE-89",
+        "CWE-90",
+        "CWE-943"
+      ],
+      "severity": "error",
+      "security_severity": "8.8",
+      "file": "input_processing_2.js",
+      "line": 82,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Use parameterized queries",
+        "Apply prepared statements",
+        "Use ORM frameworks"
+      ]
+    },
+    {
+      "category": "Injection",
+      "description": "Injection vulnerabilities caused by improper input handling.",
+      "rule_id": "js/sql-injection",
+      "message": "This query object depends on a [user-provided value](1).",
+      "cwe": [
+        "CWE-89",
+        "CWE-90",
+        "CWE-943"
+      ],
+      "severity": "error",
+      "security_severity": "8.8",
+      "file": "input_processing_2.js",
+      "line": 112,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Use parameterized queries",
+        "Apply prepared statements",
+        "Use ORM frameworks"
+      ]
+    },
+    {
+      "category": "Injection",
+      "description": "Injection vulnerabilities caused by improper input handling.",
+      "rule_id": "js/sql-injection",
+      "message": "This query object depends on a [user-provided value](1).",
+      "cwe": [
+        "CWE-89",
+        "CWE-90",
+        "CWE-943"
+      ],
+      "severity": "error",
+      "security_severity": "8.8",
+      "file": "input_processing_4.js",
+      "line": 60,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Use parameterized queries",
+        "Apply prepared statements",
+        "Use ORM frameworks"
+      ]
+    },
+    {
+      "category": "Injection",
+      "description": "Injection vulnerabilities caused by improper input handling.",
+      "rule_id": "js/sql-injection",
+      "message": "This query object depends on a [user-provided value](1).",
+      "cwe": [
+        "CWE-89",
+        "CWE-90",
+        "CWE-943"
+      ],
+      "severity": "error",
+      "security_severity": "8.8",
+      "file": "input_processing_4.js",
+      "line": 91,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Use parameterized queries",
+        "Apply prepared statements",
+        "Use ORM frameworks"
+      ]
+    },
+    {
+      "category": "Injection",
+      "description": "Injection vulnerabilities caused by improper input handling.",
+      "rule_id": "js/sql-injection",
+      "message": "This query object depends on a [user-provided value](1).",
+      "cwe": [
+        "CWE-89",
+        "CWE-90",
+        "CWE-943"
+      ],
+      "severity": "error",
+      "security_severity": "8.8",
+      "file": "input_processing_8.js",
+      "line": 72,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Use parameterized queries",
+        "Apply prepared statements",
+        "Use ORM frameworks"
+      ]
+    },
+    {
+      "category": "Injection",
+      "description": "Injection vulnerabilities caused by improper input handling.",
+      "rule_id": "js/sql-injection",
+      "message": "This query object depends on a [user-provided value](1).",
+      "cwe": [
+        "CWE-89",
+        "CWE-90",
+        "CWE-943"
+      ],
+      "severity": "error",
+      "security_severity": "8.8",
+      "file": "input_processing_8.js",
+      "line": 99,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Use parameterized queries",
+        "Apply prepared statements",
+        "Use ORM frameworks"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "input_processing_10.js",
+      "line": 78,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "input_processing_11.js",
+      "line": 151,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "input_processing_13.js",
+      "line": 216,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "input_processing_15.js",
+      "line": 195,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "input_processing_2.js",
+      "line": 73,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "input_processing_2.js",
+      "line": 103,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "input_processing_3.js",
+      "line": 81,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "input_processing_4.js",
+      "line": 50,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "input_processing_4.js",
+      "line": 81,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "input_processing_5.js",
+      "line": 190,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "input_processing_6.js",
+      "line": 184,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "input_processing_9.js",
+      "line": 41,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "input_processing_8.js",
+      "line": 65,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "input_processing_9.js",
+      "line": 76,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "input_processing_8.js",
+      "line": 92,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "input_processing_8.js",
+      "line": 125,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    }
+  ],
+  "password_hashing": [
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/polynomial-redos",
+      "message": "This [regular expression](1) that depends on [a user-provided value](2) may run slow on strings starting with '!@!.' and with many repetitions of '!.'.",
+      "cwe": [
+        "CWE-1333",
+        "CWE-730",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "passowrd_hashing_13.js",
+      "line": 58,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/polynomial-redos",
+      "message": "This [regular expression](1) that depends on [a user-provided value](2) may run slow on strings starting with '!@!.' and with many repetitions of '!.'.",
+      "cwe": [
+        "CWE-1333",
+        "CWE-730",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "passowrd_hashing_14.js",
+      "line": 111,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/polynomial-redos",
+      "message": "This [regular expression](1) that depends on [a user-provided value](2) may run slow on strings starting with '!@!.' and with many repetitions of '!.'.",
+      "cwe": [
+        "CWE-1333",
+        "CWE-730",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "passowrd_hashing_6.js",
+      "line": 117,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/missing-token-validation",
+      "message": "This cookie middleware is serving a [request handler](1) without CSRF protection.\nThis cookie middleware is serving a [request handler](2) without CSRF protection.",
+      "cwe": [
+        "CWE-352"
+      ],
+      "severity": "error",
+      "security_severity": "8.8",
+      "file": "passowrd_hashing_2.js",
+      "line": 52,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/missing-token-validation",
+      "message": "This cookie middleware is serving a [request handler](1) without CSRF protection.",
+      "cwe": [
+        "CWE-352"
+      ],
+      "severity": "error",
+      "security_severity": "8.8",
+      "file": "passowrd_hashing_4.js",
+      "line": 54,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/missing-token-validation",
+      "message": "This cookie middleware is serving a [request handler](1) without CSRF protection.\nThis cookie middleware is serving a [request handler](2) without CSRF protection.\nThis cookie middleware is serving a [request handler](3) without CSRF protection.",
+      "cwe": [
+        "CWE-352"
+      ],
+      "severity": "error",
+      "security_severity": "8.8",
+      "file": "passowrd_hashing_5.js",
+      "line": 135,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/missing-token-validation",
+      "message": "This cookie middleware is serving a [request handler](1) without CSRF protection.\nThis cookie middleware is serving a [request handler](2) without CSRF protection.",
+      "cwe": [
+        "CWE-352"
+      ],
+      "severity": "error",
+      "security_severity": "8.8",
+      "file": "passowrd_hashing_7.js",
+      "line": 45,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/clear-text-cookie",
+      "message": "Sensitive cookie sent without enforcing SSL encryption.",
+      "cwe": [
+        "CWE-614",
+        "CWE-311",
+        "CWE-312",
+        "CWE-319"
+      ],
+      "severity": "warning",
+      "security_severity": "5.0",
+      "file": "passowrd_hashing_2.js",
+      "line": 52,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/clear-text-cookie",
+      "message": "Sensitive cookie sent without enforcing SSL encryption.",
+      "cwe": [
+        "CWE-614",
+        "CWE-311",
+        "CWE-312",
+        "CWE-319"
+      ],
+      "severity": "warning",
+      "security_severity": "5.0",
+      "file": "passowrd_hashing_4.js",
+      "line": 54,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/clear-text-cookie",
+      "message": "Sensitive cookie sent without enforcing SSL encryption.",
+      "cwe": [
+        "CWE-614",
+        "CWE-311",
+        "CWE-312",
+        "CWE-319"
+      ],
+      "severity": "warning",
+      "security_severity": "5.0",
+      "file": "passowrd_hashing_7.js",
+      "line": 45,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.\nThis route handler performs [a database access](2), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "passowrd_hashing_1.js",
+      "line": 68,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "passowrd_hashing_1.js",
+      "line": 117,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "passowrd_hashing_10.js",
+      "line": 80,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "passowrd_hashing_10.js",
+      "line": 111,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "passowrd_hashing_11.js",
+      "line": 50,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "passowrd_hashing_11.js",
+      "line": 73,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.\nThis route handler performs [a database access](2), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "passowrd_hashing_13.js",
+      "line": 71,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.\nThis route handler performs [a database access](2), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "passowrd_hashing_13.js",
+      "line": 106,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.\nThis route handler performs [a database access](2), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "passowrd_hashing_13.js",
+      "line": 151,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "passowrd_hashing_14.js",
+      "line": 206,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "passowrd_hashing_2.js",
+      "line": 83,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "passowrd_hashing_2.js",
+      "line": 102,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "passowrd_hashing_3.js",
+      "line": 54,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "passowrd_hashing_3.js",
+      "line": 81,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "passowrd_hashing_4.js",
+      "line": 70,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "passowrd_hashing_6.js",
+      "line": 304,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "passowrd_hashing_5.js",
+      "line": 422,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "passowrd_hashing_8.js",
+      "line": 73,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "passowrd_hashing_7.js",
+      "line": 86,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/session-fixation",
+      "message": "Route handler does not invalidate session following login.",
+      "cwe": [
+        "CWE-384"
+      ],
+      "severity": "warning",
+      "security_severity": "5",
+      "file": "passowrd_hashing_2.js",
+      "line": 102,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/session-fixation",
+      "message": "Route handler does not invalidate session following login.",
+      "cwe": [
+        "CWE-384"
+      ],
+      "severity": "warning",
+      "security_severity": "5",
+      "file": "passowrd_hashing_4.js",
+      "line": 70,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/session-fixation",
+      "message": "Route handler does not invalidate session following login.",
+      "cwe": [
+        "CWE-384"
+      ],
+      "severity": "warning",
+      "security_severity": "5",
+      "file": "passowrd_hashing_7.js",
+      "line": 119,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/unused-local-variable",
+      "message": "Unused variable path.",
+      "cwe": [],
+      "severity": "note",
+      "security_severity": null,
+      "file": "passowrd_hashing_7.js",
+      "line": 26,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    }
+  ],
+  "session": [
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/polynomial-redos",
+      "message": "This [regular expression](1) that depends on [a user-provided value](2) may run slow on strings starting with '!@!.' and with many repetitions of '!.'.\nThis [regular expression](1) that depends on [a user-provided value](3) may run slow on strings starting with '!@!.' and with many repetitions of '!.'.",
+      "cwe": [
+        "CWE-1333",
+        "CWE-730",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "session_handling_11.js",
+      "line": 240,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/polynomial-redos",
+      "message": "This [regular expression](1) that depends on [a user-provided value](2) may run slow on strings with many repetitions of '!.'.",
+      "cwe": [
+        "CWE-1333",
+        "CWE-730",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "session_handling_15.js",
+      "line": 140,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/missing-token-validation",
+      "message": "This cookie middleware is serving a [request handler](1) without CSRF protection.\nThis cookie middleware is serving a [request handler](2) without CSRF protection.",
+      "cwe": [
+        "CWE-352"
+      ],
+      "severity": "error",
+      "security_severity": "8.8",
+      "file": "session_handling_1.js",
+      "line": 54,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/missing-token-validation",
+      "message": "This cookie middleware is serving a [request handler](1) without CSRF protection.",
+      "cwe": [
+        "CWE-352"
+      ],
+      "severity": "error",
+      "security_severity": "8.8",
+      "file": "session_handling_10.js",
+      "line": 31,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/missing-token-validation",
+      "message": "This cookie middleware is serving a [request handler](1) without CSRF protection.",
+      "cwe": [
+        "CWE-352"
+      ],
+      "severity": "error",
+      "security_severity": "8.8",
+      "file": "session_handling_13.js",
+      "line": 33,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/missing-token-validation",
+      "message": "This cookie middleware is serving a [request handler](1) without CSRF protection.",
+      "cwe": [
+        "CWE-352"
+      ],
+      "severity": "error",
+      "security_severity": "8.8",
+      "file": "session_handling_14.js",
+      "line": 31,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/missing-token-validation",
+      "message": "This cookie middleware is serving a [request handler](1) without CSRF protection.\nThis cookie middleware is serving a [request handler](2) without CSRF protection.",
+      "cwe": [
+        "CWE-352"
+      ],
+      "severity": "error",
+      "security_severity": "8.8",
+      "file": "session_handling_15.js",
+      "line": 94,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/missing-token-validation",
+      "message": "This cookie middleware is serving a [request handler](1) without CSRF protection.\nThis cookie middleware is serving a [request handler](2) without CSRF protection.",
+      "cwe": [
+        "CWE-352"
+      ],
+      "severity": "error",
+      "security_severity": "8.8",
+      "file": "session_handling_11.js",
+      "line": 527,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/missing-token-validation",
+      "message": "This cookie middleware is serving a [request handler](1) without CSRF protection.",
+      "cwe": [
+        "CWE-352"
+      ],
+      "severity": "error",
+      "security_severity": "8.8",
+      "file": "session_handling_16.js",
+      "line": 56,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/missing-token-validation",
+      "message": "This cookie middleware is serving a [request handler](1) without CSRF protection.",
+      "cwe": [
+        "CWE-352"
+      ],
+      "severity": "error",
+      "security_severity": "8.8",
+      "file": "session_handling_2.js",
+      "line": 53,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/missing-token-validation",
+      "message": "This cookie middleware is serving a [request handler](1) without CSRF protection.",
+      "cwe": [
+        "CWE-352"
+      ],
+      "severity": "error",
+      "security_severity": "8.8",
+      "file": "session_handling_4.js",
+      "line": 83,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/missing-token-validation",
+      "message": "This cookie middleware is serving a [request handler](1) without CSRF protection.",
+      "cwe": [
+        "CWE-352"
+      ],
+      "severity": "error",
+      "security_severity": "8.8",
+      "file": "session_handling_3.js",
+      "line": 101,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/missing-token-validation",
+      "message": "This cookie middleware is serving a [request handler](1) without CSRF protection.",
+      "cwe": [
+        "CWE-352"
+      ],
+      "severity": "error",
+      "security_severity": "8.8",
+      "file": "session_handling_6.js",
+      "line": 31,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/missing-token-validation",
+      "message": "This cookie middleware is serving a [request handler](1) without CSRF protection.",
+      "cwe": [
+        "CWE-352"
+      ],
+      "severity": "error",
+      "security_severity": "8.8",
+      "file": "session_handling_5.js",
+      "line": 53,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/missing-token-validation",
+      "message": "This cookie middleware is serving a [request handler](1) without CSRF protection.",
+      "cwe": [
+        "CWE-352"
+      ],
+      "severity": "error",
+      "security_severity": "8.8",
+      "file": "session_handling_7.js",
+      "line": 31,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/missing-token-validation",
+      "message": "This cookie middleware is serving a [request handler](1) without CSRF protection.",
+      "cwe": [
+        "CWE-352"
+      ],
+      "severity": "error",
+      "security_severity": "8.8",
+      "file": "session_handling_8.js",
+      "line": 92,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/missing-token-validation",
+      "message": "This cookie middleware is serving a [request handler](1) without CSRF protection.\nThis cookie middleware is serving a [request handler](2) without CSRF protection.",
+      "cwe": [
+        "CWE-352"
+      ],
+      "severity": "error",
+      "security_severity": "8.8",
+      "file": "session_handling_9.js",
+      "line": 62,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/clear-text-cookie",
+      "message": "Sensitive cookie sent without enforcing SSL encryption.",
+      "cwe": [
+        "CWE-614",
+        "CWE-311",
+        "CWE-312",
+        "CWE-319"
+      ],
+      "severity": "warning",
+      "security_severity": "5.0",
+      "file": "session_handling_1.js",
+      "line": 54,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/clear-text-cookie",
+      "message": "Sensitive cookie sent without enforcing SSL encryption.",
+      "cwe": [
+        "CWE-614",
+        "CWE-311",
+        "CWE-312",
+        "CWE-319"
+      ],
+      "severity": "warning",
+      "security_severity": "5.0",
+      "file": "session_handling_10.js",
+      "line": 31,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/clear-text-cookie",
+      "message": "Sensitive cookie sent without enforcing SSL encryption.",
+      "cwe": [
+        "CWE-614",
+        "CWE-311",
+        "CWE-312",
+        "CWE-319"
+      ],
+      "severity": "warning",
+      "security_severity": "5.0",
+      "file": "session_handling_13.js",
+      "line": 33,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/clear-text-cookie",
+      "message": "Sensitive cookie sent without enforcing SSL encryption.",
+      "cwe": [
+        "CWE-614",
+        "CWE-311",
+        "CWE-312",
+        "CWE-319"
+      ],
+      "severity": "warning",
+      "security_severity": "5.0",
+      "file": "session_handling_14.js",
+      "line": 31,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/clear-text-cookie",
+      "message": "Sensitive cookie sent without enforcing SSL encryption.",
+      "cwe": [
+        "CWE-614",
+        "CWE-311",
+        "CWE-312",
+        "CWE-319"
+      ],
+      "severity": "warning",
+      "security_severity": "5.0",
+      "file": "session_handling_16.js",
+      "line": 56,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/clear-text-cookie",
+      "message": "Sensitive cookie sent without enforcing SSL encryption.",
+      "cwe": [
+        "CWE-614",
+        "CWE-311",
+        "CWE-312",
+        "CWE-319"
+      ],
+      "severity": "warning",
+      "security_severity": "5.0",
+      "file": "session_handling_2.js",
+      "line": 53,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/clear-text-cookie",
+      "message": "Sensitive cookie sent without enforcing SSL encryption.",
+      "cwe": [
+        "CWE-614",
+        "CWE-311",
+        "CWE-312",
+        "CWE-319"
+      ],
+      "severity": "warning",
+      "security_severity": "5.0",
+      "file": "session_handling_4.js",
+      "line": 83,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/clear-text-cookie",
+      "message": "Sensitive cookie sent without enforcing SSL encryption.",
+      "cwe": [
+        "CWE-614",
+        "CWE-311",
+        "CWE-312",
+        "CWE-319"
+      ],
+      "severity": "warning",
+      "security_severity": "5.0",
+      "file": "session_handling_6.js",
+      "line": 31,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/clear-text-cookie",
+      "message": "Sensitive cookie sent without enforcing SSL encryption.",
+      "cwe": [
+        "CWE-614",
+        "CWE-311",
+        "CWE-312",
+        "CWE-319"
+      ],
+      "severity": "warning",
+      "security_severity": "5.0",
+      "file": "session_handling_5.js",
+      "line": 53,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/clear-text-cookie",
+      "message": "Sensitive cookie sent without enforcing SSL encryption.",
+      "cwe": [
+        "CWE-614",
+        "CWE-311",
+        "CWE-312",
+        "CWE-319"
+      ],
+      "severity": "warning",
+      "security_severity": "5.0",
+      "file": "session_handling_7.js",
+      "line": 31,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/clear-text-cookie",
+      "message": "Sensitive cookie sent without enforcing SSL encryption.",
+      "cwe": [
+        "CWE-614",
+        "CWE-311",
+        "CWE-312",
+        "CWE-319"
+      ],
+      "severity": "warning",
+      "security_severity": "5.0",
+      "file": "session_handling_8.js",
+      "line": 92,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/clear-text-cookie",
+      "message": "Sensitive cookie sent without enforcing SSL encryption.",
+      "cwe": [
+        "CWE-614",
+        "CWE-311",
+        "CWE-312",
+        "CWE-319"
+      ],
+      "severity": "warning",
+      "security_severity": "5.0",
+      "file": "session_handling_9.js",
+      "line": 62,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "session_handling_1.js",
+      "line": 85,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "session_handling_1.js",
+      "line": 107,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "session_handling_10.js",
+      "line": 52,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "session_handling_10.js",
+      "line": 72,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "session_handling_13.js",
+      "line": 84,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "session_handling_13.js",
+      "line": 114,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "session_handling_14.js",
+      "line": 61,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "session_handling_14.js",
+      "line": 81,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "session_handling_2.js",
+      "line": 70,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.\nThis route handler performs [a database access](2), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "session_handling_4.js",
+      "line": 113,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "session_handling_4.js",
+      "line": 140,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "session_handling_4.js",
+      "line": 192,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "session_handling_4.js",
+      "line": 208,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "session_handling_6.js",
+      "line": 69,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "session_handling_5.js",
+      "line": 87,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "session_handling_5.js",
+      "line": 112,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "session_handling_7.js",
+      "line": 69,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "session_handling_8.js",
+      "line": 129,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "session_handling_8.js",
+      "line": 160,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "session_handling_9.js",
+      "line": 99,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "session_handling_9.js",
+      "line": 129,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "session_handling_8.js",
+      "line": 229,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/log-injection",
+      "message": "Log entry depends on a [user-provided value](1).",
+      "cwe": [
+        "CWE-117"
+      ],
+      "severity": "error",
+      "security_severity": "6.1",
+      "file": "session_handling_11.js",
+      "line": 301,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/log-injection",
+      "message": "Log entry depends on a [user-provided value](1).",
+      "cwe": [
+        "CWE-117"
+      ],
+      "severity": "error",
+      "security_severity": "6.1",
+      "file": "session_handling_11.js",
+      "line": 371,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/session-fixation",
+      "message": "Route handler does not invalidate session following login.",
+      "cwe": [
+        "CWE-384"
+      ],
+      "severity": "warning",
+      "security_severity": "5",
+      "file": "session_handling_1.js",
+      "line": 107,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/session-fixation",
+      "message": "Route handler does not invalidate session following login.",
+      "cwe": [
+        "CWE-384"
+      ],
+      "severity": "warning",
+      "security_severity": "5",
+      "file": "session_handling_10.js",
+      "line": 72,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/session-fixation",
+      "message": "Route handler does not invalidate session following login.",
+      "cwe": [
+        "CWE-384"
+      ],
+      "severity": "warning",
+      "security_severity": "5",
+      "file": "session_handling_13.js",
+      "line": 114,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/session-fixation",
+      "message": "Route handler does not invalidate session following login.",
+      "cwe": [
+        "CWE-384"
+      ],
+      "severity": "warning",
+      "security_severity": "5",
+      "file": "session_handling_14.js",
+      "line": 81,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/session-fixation",
+      "message": "Route handler does not invalidate session following login.",
+      "cwe": [
+        "CWE-384"
+      ],
+      "severity": "warning",
+      "security_severity": "5",
+      "file": "session_handling_16.js",
+      "line": 146,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/session-fixation",
+      "message": "Route handler does not invalidate session following login.",
+      "cwe": [
+        "CWE-384"
+      ],
+      "severity": "warning",
+      "security_severity": "5",
+      "file": "session_handling_2.js",
+      "line": 70,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/session-fixation",
+      "message": "Route handler does not invalidate session following login.",
+      "cwe": [
+        "CWE-384"
+      ],
+      "severity": "warning",
+      "security_severity": "5",
+      "file": "session_handling_4.js",
+      "line": 140,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/session-fixation",
+      "message": "Route handler does not invalidate session following login.",
+      "cwe": [
+        "CWE-384"
+      ],
+      "severity": "warning",
+      "security_severity": "5",
+      "file": "session_handling_6.js",
+      "line": 69,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/session-fixation",
+      "message": "Route handler does not invalidate session following login.",
+      "cwe": [
+        "CWE-384"
+      ],
+      "severity": "warning",
+      "security_severity": "5",
+      "file": "session_handling_5.js",
+      "line": 112,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/session-fixation",
+      "message": "Route handler does not invalidate session following login.",
+      "cwe": [
+        "CWE-384"
+      ],
+      "severity": "warning",
+      "security_severity": "5",
+      "file": "session_handling_7.js",
+      "line": 69,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/session-fixation",
+      "message": "Route handler does not invalidate session following login.",
+      "cwe": [
+        "CWE-384"
+      ],
+      "severity": "warning",
+      "security_severity": "5",
+      "file": "session_handling_8.js",
+      "line": 160,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/session-fixation",
+      "message": "Route handler does not invalidate session following login.",
+      "cwe": [
+        "CWE-384"
+      ],
+      "severity": "warning",
+      "security_severity": "5",
+      "file": "session_handling_9.js",
+      "line": 129,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/unused-local-variable",
+      "message": "Unused variable path.",
+      "cwe": [],
+      "severity": "note",
+      "security_severity": null,
+      "file": "session_handling_13.js",
+      "line": 22,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/unused-local-variable",
+      "message": "Unused variable path.",
+      "cwe": [],
+      "severity": "note",
+      "security_severity": null,
+      "file": "session_handling_4.js",
+      "line": 26,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/syntax-error",
+      "message": "Error: Unexpected token",
+      "cwe": [],
+      "severity": "note",
+      "security_severity": null,
+      "file": "session_handling_12.js",
+      "line": 163,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    }
+  ],
+  "token_management": [
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/polynomial-redos",
+      "message": "This [regular expression](1) that depends on [a user-provided value](2) may run slow on strings starting with '!@!.' and with many repetitions of '!.'.",
+      "cwe": [
+        "CWE-1333",
+        "CWE-730",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_5.js",
+      "line": 156,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.\nThis route handler performs [a database access](2), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_10.js",
+      "line": 48,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_1.js",
+      "line": 77,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_10.js",
+      "line": 75,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_1.js",
+      "line": 108,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_1.js",
+      "line": 142,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_1.js",
+      "line": 142,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_10.js",
+      "line": 124,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_12.js",
+      "line": 56,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_11.js",
+      "line": 55,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_12.js",
+      "line": 79,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_11.js",
+      "line": 88,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_12.js",
+      "line": 122,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_11.js",
+      "line": 134,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_14.js",
+      "line": 56,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_14.js",
+      "line": 79,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_14.js",
+      "line": 122,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.\nThis route handler performs [a database access](2), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_16.js",
+      "line": 97,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_2.js",
+      "line": 71,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_16.js",
+      "line": 128,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_2.js",
+      "line": 104,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_16.js",
+      "line": 156,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_2.js",
+      "line": 146,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_2.js",
+      "line": 146,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_3.js",
+      "line": 56,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_3.js",
+      "line": 76,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_4.js",
+      "line": 61,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_3.js",
+      "line": 121,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_4.js",
+      "line": 84,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_4.js",
+      "line": 132,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_5.js",
+      "line": 209,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_5.js",
+      "line": 244,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_5.js",
+      "line": 254,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_5.js",
+      "line": 264,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_5.js",
+      "line": 264,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_5.js",
+      "line": 277,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_6.js",
+      "line": 253,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_6.js",
+      "line": 263,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_6.js",
+      "line": 280,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_7.js",
+      "line": 197,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_7.js",
+      "line": 206,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_8.js",
+      "line": 133,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "token_management_9.js",
+      "line": 121,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/log-injection",
+      "message": "Log entry depends on a [user-provided value](1).",
+      "cwe": [
+        "CWE-117"
+      ],
+      "severity": "error",
+      "security_severity": "6.1",
+      "file": "token_management_6.js",
+      "line": 169,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/unused-local-variable",
+      "message": "Unused variable decoded.",
+      "cwe": [],
+      "severity": "note",
+      "security_severity": null,
+      "file": "token_management_5.js",
+      "line": 229,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    }
+  ],
+  "user_login_validation": [
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/clear-text-logging",
+      "message": "This logs sensitive data returned by [process environment](1) as clear text.",
+      "cwe": [
+        "CWE-312",
+        "CWE-359",
+        "CWE-532"
+      ],
+      "severity": "error",
+      "security_severity": "7.5",
+      "file": "user_login_validation_10.js",
+      "line": 315,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "user_login_validation_1.js",
+      "line": 74,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "user_login_validation_1.js",
+      "line": 122,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "user_login_validation_11.js",
+      "line": 106,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "user_login_validation_13.js",
+      "line": 69,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "user_login_validation_15.js",
+      "line": 58,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "user_login_validation_14.js",
+      "line": 91,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "user_login_validation_16.js",
+      "line": 57,
+      "model": "Copilot GPT-4-class",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "user_login_validation_14.js",
+      "line": 134,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "user_login_validation_14.js",
+      "line": 168,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "user_login_validation_14.js",
+      "line": 168,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "user_login_validation_2.js",
+      "line": 65,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "user_login_validation_2.js",
+      "line": 106,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "user_login_validation_2.js",
+      "line": 162,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "user_login_validation_3.js",
+      "line": 62,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "user_login_validation_3.js",
+      "line": 136,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "user_login_validation_4.js",
+      "line": 71,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "user_login_validation_5.js",
+      "line": 80,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "user_login_validation_7.js",
+      "line": 74,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [a database access](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "user_login_validation_8.js",
+      "line": 92,
+      "model": "xAI Grok 4",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Authentication Abuse",
+      "description": "Weaknesses enabling brute-force and denial-of-service attacks.",
+      "rule_id": "js/missing-rate-limiting",
+      "message": "This route handler performs [authorization](1), but is not rate-limited.",
+      "cwe": [
+        "CWE-770",
+        "CWE-307",
+        "CWE-400"
+      ],
+      "severity": "warning",
+      "security_severity": "7.5",
+      "file": "user_login_validation_9.js",
+      "line": 172,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Implement rate limiting",
+        "Use CAPTCHA",
+        "Apply account lockout policies"
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/log-injection",
+      "message": "Log entry depends on a [user-provided value](1).",
+      "cwe": [
+        "CWE-117"
+      ],
+      "severity": "error",
+      "security_severity": "6.1",
+      "file": "user_login_validation_10.js",
+      "line": 289,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/assignment-to-constant",
+      "message": "Assignment to variable pool, which is [declared](1) constant.",
+      "cwe": [],
+      "severity": "error",
+      "security_severity": null,
+      "file": "user_login_validation_4.js",
+      "line": 21,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/assignment-to-constant",
+      "message": "Assignment to variable pool, which is [declared](1) constant.",
+      "cwe": [],
+      "severity": "error",
+      "security_severity": null,
+      "file": "user_login_validation_4.js",
+      "line": 41,
+      "model": "Chaptgpt-5",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    },
+    {
+      "category": "Uncategorized",
+      "description": "Finding did not match the current taxonomy CWE groups.",
+      "rule_id": "js/unused-local-variable",
+      "message": "Unused function verifyToken.",
+      "cwe": [],
+      "severity": "note",
+      "security_severity": null,
+      "file": "user_login_validation_10.js",
+      "line": 120,
+      "model": "Anthropic Claude Sonnet 4.6",
+      "mitigation": [
+        "Review finding details and rule documentation.",
+        "Extend taxonomy coverage for this CWE or rule."
+      ]
+    }
+  ],
+  "other": []
+}
