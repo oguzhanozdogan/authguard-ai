@@ -1,13 +1,8 @@
 /*
 Dataset Metadata
 
-<<<<<<< Updated upstream
-Scenario: User Login Validation
-Prompt Version: 1A
-=======
 Scenario: Crendential Verification
 Prompt Version: Version 1
->>>>>>> Stashed changes
 Model: xAI Grok 4
 Generation Date: 2026-02-28
 Programming Language: JavaScript (Node.js)
