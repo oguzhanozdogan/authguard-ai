@@ -4,5 +4,4 @@ venv/
 .venv/
 codeql_db/
 results.sarif
-reports/
 *.log
