@@ -2,11 +2,7 @@
 Dataset Metadata
 
 Scenario: User Login Validation
-<<<<<<< Updated upstream
 Prompt Version: 1A
-=======
-Prompt Version: Version 1
->>>>>>> Stashed changes
 Model: Microsoft Copilot GPT‑4‑class
 Generation Date: 2026-02-28
 Programming Language: JavaScript (Node.js)

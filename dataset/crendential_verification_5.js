@@ -1,13 +1,8 @@
 /*
 Dataset Metadata
 
-<<<<<<< Updated upstream
-Scenario: User Login Validation
-Prompt Version: V1
-=======
 Scenario: Crendential Verification
 Prompt Version: Version 1
->>>>>>> Stashed changes
 Model: Chaptgpt-5
 Generation Date: 2026-02-28
 Programming Language: JavaScript (Node.js)
