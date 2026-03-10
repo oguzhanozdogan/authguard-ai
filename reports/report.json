@@ -26,50 +26,6 @@
       "category": "Authentication and Resource Abuse",
       "description": "Weaknesses that allow attackers to abuse authentication mechanisms or exhaust system resources through brute-force or denial-of-service techniques.",
       "rule_id": "js/missing-rate-limiting",
-      "message": "This route handler performs [a database access](1), but is not rate-limited.\nThis route handler performs [a database access](2), but is not rate-limited.",
-      "cwe": [
-        "CWE-770",
-        "CWE-307",
-        "CWE-400"
-      ],
-      "severity": "warning",
-      "security_severity": "7.5",
-      "file": "crendential_verification_1.js",
-      "line": 103,
-      "model": "Chaptgpt-5",
-      "mitigation": [
-        "Implement rate limiting",
-        "Use CAPTCHA where appropriate",
-        "Apply account lockout policies",
-        "Enforce resource usage quotas"
-      ]
-    },
-    {
-      "category": "Authentication and Resource Abuse",
-      "description": "Weaknesses that allow attackers to abuse authentication mechanisms or exhaust system resources through brute-force or denial-of-service techniques.",
-      "rule_id": "js/missing-rate-limiting",
-      "message": "This route handler performs [a database access](1), but is not rate-limited.",
-      "cwe": [
-        "CWE-770",
-        "CWE-307",
-        "CWE-400"
-      ],
-      "severity": "warning",
-      "security_severity": "7.5",
-      "file": "crendential_verification_10.js",
-      "line": 60,
-      "model": "xAI Grok 4",
-      "mitigation": [
-        "Implement rate limiting",
-        "Use CAPTCHA where appropriate",
-        "Apply account lockout policies",
-        "Enforce resource usage quotas"
-      ]
-    },
-    {
-      "category": "Authentication and Resource Abuse",
-      "description": "Weaknesses that allow attackers to abuse authentication mechanisms or exhaust system resources through brute-force or denial-of-service techniques.",
-      "rule_id": "js/missing-rate-limiting",
       "message": "This route handler performs [a database access](1), but is not rate-limited.",
       "cwe": [
         "CWE-770",
@@ -92,50 +48,6 @@
       "category": "Authentication and Resource Abuse",
       "description": "Weaknesses that allow attackers to abuse authentication mechanisms or exhaust system resources through brute-force or denial-of-service techniques.",
       "rule_id": "js/missing-rate-limiting",
-      "message": "This route handler performs [authorization](1), but is not rate-limited.",
-      "cwe": [
-        "CWE-770",
-        "CWE-307",
-        "CWE-400"
-      ],
-      "severity": "warning",
-      "security_severity": "7.5",
-      "file": "crendential_verification_11.js",
-      "line": 216,
-      "model": "Anthropic Claude Sonnet 4.6",
-      "mitigation": [
-        "Implement rate limiting",
-        "Use CAPTCHA where appropriate",
-        "Apply account lockout policies",
-        "Enforce resource usage quotas"
-      ]
-    },
-    {
-      "category": "Authentication and Resource Abuse",
-      "description": "Weaknesses that allow attackers to abuse authentication mechanisms or exhaust system resources through brute-force or denial-of-service techniques.",
-      "rule_id": "js/missing-rate-limiting",
-      "message": "This route handler performs [authorization](1), but is not rate-limited.",
-      "cwe": [
-        "CWE-770",
-        "CWE-307",
-        "CWE-400"
-      ],
-      "severity": "warning",
-      "security_severity": "7.5",
-      "file": "crendential_verification_11.js",
-      "line": 260,
-      "model": "Anthropic Claude Sonnet 4.6",
-      "mitigation": [
-        "Implement rate limiting",
-        "Use CAPTCHA where appropriate",
-        "Apply account lockout policies",
-        "Enforce resource usage quotas"
-      ]
-    },
-    {
-      "category": "Authentication and Resource Abuse",
-      "description": "Weaknesses that allow attackers to abuse authentication mechanisms or exhaust system resources through brute-force or denial-of-service techniques.",
-      "rule_id": "js/missing-rate-limiting",
       "message": "This route handler performs [a database access](1), but is not rate-limited.\nThis route handler performs [a database access](2), but is not rate-limited.",
       "cwe": [
         "CWE-770",
@@ -145,7 +57,7 @@
       "severity": "warning",
       "security_severity": "7.5",
       "file": "crendential_verification_12.js",
-      "line": 64,
+      "line": 59,
       "model": "Copilot GPT-4-class",
       "mitigation": [
         "Implement rate limiting",
@@ -167,7 +79,7 @@
       "severity": "warning",
       "security_severity": "7.5",
       "file": "crendential_verification_12.js",
-      "line": 101,
+      "line": 96,
       "model": "Copilot GPT-4-class",
       "mitigation": [
         "Implement rate limiting",
@@ -387,7 +299,7 @@
       "severity": "warning",
       "security_severity": "7.5",
       "file": "crendential_verification_3.js",
-      "line": 162,
+      "line": 157,
       "model": "Anthropic Claude Sonnet 4.6",
       "mitigation": [
         "Implement rate limiting",
@@ -431,7 +343,7 @@
       "severity": "warning",
       "security_severity": "7.5",
       "file": "crendential_verification_4.js",
-      "line": 48,
+      "line": 43,
       "model": "Copilot GPT-4-class",
       "mitigation": [
         "Implement rate limiting",
@@ -453,7 +365,7 @@
       "severity": "warning",
       "security_severity": "7.5",
       "file": "crendential_verification_4.js",
-      "line": 80,
+      "line": 75,
       "model": "Copilot GPT-4-class",
       "mitigation": [
         "Implement rate limiting",
@@ -607,7 +519,7 @@
       "severity": "warning",
       "security_severity": "7.5",
       "file": "crendential_verification_7.js",
-      "line": 248,
+      "line": 243,
       "model": "Anthropic Claude Sonnet 4.6",
       "mitigation": [
         "Implement rate limiting",
@@ -629,7 +541,7 @@
       "severity": "warning",
       "security_severity": "7.5",
       "file": "crendential_verification_7.js",
-      "line": 278,
+      "line": 273,
       "model": "Anthropic Claude Sonnet 4.6",
       "mitigation": [
         "Implement rate limiting",
@@ -651,7 +563,7 @@
       "severity": "warning",
       "security_severity": "7.5",
       "file": "crendential_verification_7.js",
-      "line": 290,
+      "line": 285,
       "model": "Anthropic Claude Sonnet 4.6",
       "mitigation": [
         "Implement rate limiting",
@@ -673,7 +585,7 @@
       "severity": "warning",
       "security_severity": "7.5",
       "file": "crendential_verification_7.js",
-      "line": 301,
+      "line": 296,
       "model": "Anthropic Claude Sonnet 4.6",
       "mitigation": [
         "Implement rate limiting",
@@ -695,29 +607,7 @@
       "severity": "warning",
       "security_severity": "7.5",
       "file": "crendential_verification_7.js",
-      "line": 308,
-      "model": "Anthropic Claude Sonnet 4.6",
-      "mitigation": [
-        "Implement rate limiting",
-        "Use CAPTCHA where appropriate",
-        "Apply account lockout policies",
-        "Enforce resource usage quotas"
-      ]
-    },
-    {
-      "category": "Authentication and Resource Abuse",
-      "description": "Weaknesses that allow attackers to abuse authentication mechanisms or exhaust system resources through brute-force or denial-of-service techniques.",
-      "rule_id": "js/missing-rate-limiting",
-      "message": "This route handler performs [a database access](1), but is not rate-limited.\nThis route handler performs [a database access](2), but is not rate-limited.",
-      "cwe": [
-        "CWE-770",
-        "CWE-307",
-        "CWE-400"
-      ],
-      "severity": "warning",
-      "security_severity": "7.5",
-      "file": "crendential_verification_7.js",
-      "line": 308,
+      "line": 303,
       "model": "Anthropic Claude Sonnet 4.6",
       "mitigation": [
         "Implement rate limiting",
@@ -731,7 +621,6 @@
       "description": "Weaknesses that allow attackers to abuse authentication mechanisms or exhaust system resources through brute-force or denial-of-service techniques.",
       "rule_id": "js/missing-rate-limiting",
       "message": "This route handler performs [authorization](1), but is not rate-limited.",
-      "message": "This route handler performs [authorization](1), but is not rate-limited.",
       "cwe": [
         "CWE-770",
         "CWE-307",
@@ -740,29 +629,7 @@
       "severity": "warning",
       "security_severity": "7.5",
       "file": "crendential_verification_7.js",
-      "line": 337,
-      "model": "Anthropic Claude Sonnet 4.6",
-      "mitigation": [
-        "Implement rate limiting",
-        "Use CAPTCHA where appropriate",
-        "Apply account lockout policies",
-        "Enforce resource usage quotas"
-      ]
-    },
-    {
-      "category": "Authentication and Resource Abuse",
-      "description": "Weaknesses that allow attackers to abuse authentication mechanisms or exhaust system resources through brute-force or denial-of-service techniques.",
-      "rule_id": "js/missing-rate-limiting",
-      "message": "This route handler performs [a database access](1), but is not rate-limited.",
-      "cwe": [
-        "CWE-770",
-        "CWE-307",
-        "CWE-400"
-      ],
-      "severity": "warning",
-      "security_severity": "7.5",
-      "file": "crendential_verification_7.js",
-      "line": 337,
+      "line": 332,
       "model": "Anthropic Claude Sonnet 4.6",
       "mitigation": [
         "Implement rate limiting",
@@ -784,7 +651,7 @@
       "severity": "warning",
       "security_severity": "7.5",
       "file": "crendential_verification_8.js",
-      "line": 90,
+      "line": 85,
       "model": "Copilot GPT-4-class",
       "mitigation": [
         "Implement rate limiting",
@@ -806,7 +673,7 @@
       "severity": "warning",
       "security_severity": "7.5",
       "file": "crendential_verification_8.js",
-      "line": 119,
+      "line": 114,
       "model": "Copilot GPT-4-class",
       "mitigation": [
         "Implement rate limiting",
@@ -828,29 +695,7 @@
       "severity": "warning",
       "security_severity": "7.5",
       "file": "crendential_verification_8.js",
-      "line": 148,
-      "model": "Copilot GPT-4-class",
-      "mitigation": [
-        "Implement rate limiting",
-        "Use CAPTCHA where appropriate",
-        "Apply account lockout policies",
-        "Enforce resource usage quotas"
-      ]
-    },
-    {
-      "category": "Authentication and Resource Abuse",
-      "description": "Weaknesses that allow attackers to abuse authentication mechanisms or exhaust system resources through brute-force or denial-of-service techniques.",
-      "rule_id": "js/missing-rate-limiting",
-      "message": "This route handler performs [a database access](1), but is not rate-limited.",
-      "cwe": [
-        "CWE-770",
-        "CWE-307",
-        "CWE-400"
-      ],
-      "severity": "warning",
-      "security_severity": "7.5",
-      "file": "crendential_verification_8.js",
-      "line": 148,
+      "line": 143,
       "model": "Copilot GPT-4-class",
       "mitigation": [
         "Implement rate limiting",
@@ -872,7 +717,7 @@
       "severity": "warning",
       "security_severity": "7.5",
       "file": "crendential_verification_9.js",
-      "line": 62,
+      "line": 56,
       "model": "Chaptgpt-5",
       "mitigation": [
         "Implement rate limiting",
@@ -894,7 +739,7 @@
       "severity": "warning",
       "security_severity": "7.5",
       "file": "crendential_verification_9.js",
-      "line": 102,
+      "line": 96,
       "model": "Chaptgpt-5",
       "mitigation": [
         "Implement rate limiting",
@@ -1605,29 +1450,6 @@
       ]
     },
     {
-      "category": "Data Protection Failures",
-      "description": "Weaknesses that expose sensitive information due to improper encryption, cleartext storage, insecure transmission, or unsafe use of URL parameters.",
-      "rule_id": "js/clear-text-cookie",
-      "message": "Sensitive cookie sent without enforcing SSL encryption.",
-      "cwe": [
-        "CWE-614",
-        "CWE-311",
-        "CWE-312",
-        "CWE-319"
-      ],
-      "severity": "warning",
-      "security_severity": "5.0",
-      "file": "passowrd_hashing_2.js",
-      "line": 52,
-      "model": "Chaptgpt-5",
-      "mitigation": [
-        "Encrypt sensitive data in transit using TLS",
-        "Encrypt sensitive data at rest using strong cryptographic algorithms",
-        "Avoid including sensitive data in URLs",
-        "Implement proper key management"
-      ]
-    },
-    {
       "category": "Session Management Weaknesses",
       "description": "Weaknesses in session handling and state management that may allow session hijacking, fixation, or unauthorized request execution.",
       "rule_id": "js/clear-text-cookie",
@@ -1651,29 +1473,6 @@
       ]
     },
     {
-      "category": "Data Protection Failures",
-      "description": "Weaknesses that expose sensitive information due to improper encryption, cleartext storage, insecure transmission, or unsafe use of URL parameters.",
-      "rule_id": "js/clear-text-cookie",
-      "message": "Sensitive cookie sent without enforcing SSL encryption.",
-      "cwe": [
-        "CWE-614",
-        "CWE-311",
-        "CWE-312",
-        "CWE-319"
-      ],
-      "severity": "warning",
-      "security_severity": "5.0",
-      "file": "passowrd_hashing_4.js",
-      "line": 54,
-      "model": "xAI Grok 4",
-      "mitigation": [
-        "Encrypt sensitive data in transit using TLS",
-        "Encrypt sensitive data at rest using strong cryptographic algorithms",
-        "Avoid including sensitive data in URLs",
-        "Implement proper key management"
-      ]
-    },
-    {
       "category": "Session Management Weaknesses",
       "description": "Weaknesses in session handling and state management that may allow session hijacking, fixation, or unauthorized request execution.",
       "rule_id": "js/clear-text-cookie",
@@ -1694,29 +1493,6 @@
         "Set Secure, HttpOnly, and SameSite cookie attributes",
         "Implement anti-CSRF tokens",
         "Enforce HTTPS across the application"
-      ]
-    },
-    {
-      "category": "Data Protection Failures",
-      "description": "Weaknesses that expose sensitive information due to improper encryption, cleartext storage, insecure transmission, or unsafe use of URL parameters.",
-      "rule_id": "js/clear-text-cookie",
-      "message": "Sensitive cookie sent without enforcing SSL encryption.",
-      "cwe": [
-        "CWE-614",
-        "CWE-311",
-        "CWE-312",
-        "CWE-319"
-      ],
-      "severity": "warning",
-      "security_severity": "5.0",
-      "file": "passowrd_hashing_7.js",
-      "line": 45,
-      "model": "Copilot GPT-4-class",
-      "mitigation": [
-        "Encrypt sensitive data in transit using TLS",
-        "Encrypt sensitive data at rest using strong cryptographic algorithms",
-        "Avoid including sensitive data in URLs",
-        "Implement proper key management"
       ]
     },
     {
@@ -2107,8 +1883,6 @@
       "security_severity": "7.5",
       "file": "passowrd_hashing_7.js",
       "line": 86,
-      "file": "passowrd_hashing_7.js",
-      "line": 86,
       "model": "Copilot GPT-4-class",
       "mitigation": [
         "Implement rate limiting",
@@ -2129,8 +1903,6 @@
       ],
       "severity": "warning",
       "security_severity": "7.5",
-      "file": "passowrd_hashing_8.js",
-      "line": 73,
       "file": "passowrd_hashing_8.js",
       "line": 73,
       "model": "Copilot GPT-4-class",
@@ -2373,29 +2145,6 @@
       ]
     },
     {
-      "category": "Data Protection Failures",
-      "description": "Weaknesses that expose sensitive information due to improper encryption, cleartext storage, insecure transmission, or unsafe use of URL parameters.",
-      "rule_id": "js/clear-text-cookie",
-      "message": "Sensitive cookie sent without enforcing SSL encryption.",
-      "cwe": [
-        "CWE-614",
-        "CWE-311",
-        "CWE-312",
-        "CWE-319"
-      ],
-      "severity": "warning",
-      "security_severity": "5.0",
-      "file": "session_handling_1.js",
-      "line": 54,
-      "model": "Chaptgpt-5",
-      "mitigation": [
-        "Encrypt sensitive data in transit using TLS",
-        "Encrypt sensitive data at rest using strong cryptographic algorithms",
-        "Avoid including sensitive data in URLs",
-        "Implement proper key management"
-      ]
-    },
-    {
       "category": "Session Management Weaknesses",
       "description": "Weaknesses in session handling and state management that may allow session hijacking, fixation, or unauthorized request execution.",
       "rule_id": "js/clear-text-cookie",
@@ -2416,29 +2165,6 @@
         "Set Secure, HttpOnly, and SameSite cookie attributes",
         "Implement anti-CSRF tokens",
         "Enforce HTTPS across the application"
-      ]
-    },
-    {
-      "category": "Data Protection Failures",
-      "description": "Weaknesses that expose sensitive information due to improper encryption, cleartext storage, insecure transmission, or unsafe use of URL parameters.",
-      "rule_id": "js/clear-text-cookie",
-      "message": "Sensitive cookie sent without enforcing SSL encryption.",
-      "cwe": [
-        "CWE-614",
-        "CWE-311",
-        "CWE-312",
-        "CWE-319"
-      ],
-      "severity": "warning",
-      "security_severity": "5.0",
-      "file": "session_handling_10.js",
-      "line": 31,
-      "model": "xAI Grok 4",
-      "mitigation": [
-        "Encrypt sensitive data in transit using TLS",
-        "Encrypt sensitive data at rest using strong cryptographic algorithms",
-        "Avoid including sensitive data in URLs",
-        "Implement proper key management"
       ]
     },
     {
@@ -2465,29 +2191,6 @@
       ]
     },
     {
-      "category": "Data Protection Failures",
-      "description": "Weaknesses that expose sensitive information due to improper encryption, cleartext storage, insecure transmission, or unsafe use of URL parameters.",
-      "rule_id": "js/clear-text-cookie",
-      "message": "Sensitive cookie sent without enforcing SSL encryption.",
-      "cwe": [
-        "CWE-614",
-        "CWE-311",
-        "CWE-312",
-        "CWE-319"
-      ],
-      "severity": "warning",
-      "security_severity": "5.0",
-      "file": "session_handling_13.js",
-      "line": 33,
-      "model": "Chaptgpt-5",
-      "mitigation": [
-        "Encrypt sensitive data in transit using TLS",
-        "Encrypt sensitive data at rest using strong cryptographic algorithms",
-        "Avoid including sensitive data in URLs",
-        "Implement proper key management"
-      ]
-    },
-    {
       "category": "Session Management Weaknesses",
       "description": "Weaknesses in session handling and state management that may allow session hijacking, fixation, or unauthorized request execution.",
       "rule_id": "js/clear-text-cookie",
@@ -2508,29 +2211,6 @@
         "Set Secure, HttpOnly, and SameSite cookie attributes",
         "Implement anti-CSRF tokens",
         "Enforce HTTPS across the application"
-      ]
-    },
-    {
-      "category": "Data Protection Failures",
-      "description": "Weaknesses that expose sensitive information due to improper encryption, cleartext storage, insecure transmission, or unsafe use of URL parameters.",
-      "rule_id": "js/clear-text-cookie",
-      "message": "Sensitive cookie sent without enforcing SSL encryption.",
-      "cwe": [
-        "CWE-614",
-        "CWE-311",
-        "CWE-312",
-        "CWE-319"
-      ],
-      "severity": "warning",
-      "security_severity": "5.0",
-      "file": "session_handling_14.js",
-      "line": 31,
-      "model": "xAI Grok 4",
-      "mitigation": [
-        "Encrypt sensitive data in transit using TLS",
-        "Encrypt sensitive data at rest using strong cryptographic algorithms",
-        "Avoid including sensitive data in URLs",
-        "Implement proper key management"
       ]
     },
     {
@@ -2557,29 +2237,6 @@
       ]
     },
     {
-      "category": "Data Protection Failures",
-      "description": "Weaknesses that expose sensitive information due to improper encryption, cleartext storage, insecure transmission, or unsafe use of URL parameters.",
-      "rule_id": "js/clear-text-cookie",
-      "message": "Sensitive cookie sent without enforcing SSL encryption.",
-      "cwe": [
-        "CWE-614",
-        "CWE-311",
-        "CWE-312",
-        "CWE-319"
-      ],
-      "severity": "warning",
-      "security_severity": "5.0",
-      "file": "session_handling_16.js",
-      "line": 56,
-      "model": "Copilot GPT-4-class",
-      "mitigation": [
-        "Encrypt sensitive data in transit using TLS",
-        "Encrypt sensitive data at rest using strong cryptographic algorithms",
-        "Avoid including sensitive data in URLs",
-        "Implement proper key management"
-      ]
-    },
-    {
       "category": "Session Management Weaknesses",
       "description": "Weaknesses in session handling and state management that may allow session hijacking, fixation, or unauthorized request execution.",
       "rule_id": "js/clear-text-cookie",
@@ -2600,29 +2257,6 @@
         "Set Secure, HttpOnly, and SameSite cookie attributes",
         "Implement anti-CSRF tokens",
         "Enforce HTTPS across the application"
-      ]
-    },
-    {
-      "category": "Data Protection Failures",
-      "description": "Weaknesses that expose sensitive information due to improper encryption, cleartext storage, insecure transmission, or unsafe use of URL parameters.",
-      "rule_id": "js/clear-text-cookie",
-      "message": "Sensitive cookie sent without enforcing SSL encryption.",
-      "cwe": [
-        "CWE-614",
-        "CWE-311",
-        "CWE-312",
-        "CWE-319"
-      ],
-      "severity": "warning",
-      "security_severity": "5.0",
-      "file": "session_handling_2.js",
-      "line": 53,
-      "model": "xAI Grok 4",
-      "mitigation": [
-        "Encrypt sensitive data in transit using TLS",
-        "Encrypt sensitive data at rest using strong cryptographic algorithms",
-        "Avoid including sensitive data in URLs",
-        "Implement proper key management"
       ]
     },
     {
@@ -2649,29 +2283,6 @@
       ]
     },
     {
-      "category": "Data Protection Failures",
-      "description": "Weaknesses that expose sensitive information due to improper encryption, cleartext storage, insecure transmission, or unsafe use of URL parameters.",
-      "rule_id": "js/clear-text-cookie",
-      "message": "Sensitive cookie sent without enforcing SSL encryption.",
-      "cwe": [
-        "CWE-614",
-        "CWE-311",
-        "CWE-312",
-        "CWE-319"
-      ],
-      "severity": "warning",
-      "security_severity": "5.0",
-      "file": "session_handling_4.js",
-      "line": 83,
-      "model": "Copilot GPT-4-class",
-      "mitigation": [
-        "Encrypt sensitive data in transit using TLS",
-        "Encrypt sensitive data at rest using strong cryptographic algorithms",
-        "Avoid including sensitive data in URLs",
-        "Implement proper key management"
-      ]
-    },
-    {
       "category": "Session Management Weaknesses",
       "description": "Weaknesses in session handling and state management that may allow session hijacking, fixation, or unauthorized request execution.",
       "rule_id": "js/clear-text-cookie",
@@ -2692,29 +2303,6 @@
         "Set Secure, HttpOnly, and SameSite cookie attributes",
         "Implement anti-CSRF tokens",
         "Enforce HTTPS across the application"
-      ]
-    },
-    {
-      "category": "Data Protection Failures",
-      "description": "Weaknesses that expose sensitive information due to improper encryption, cleartext storage, insecure transmission, or unsafe use of URL parameters.",
-      "rule_id": "js/clear-text-cookie",
-      "message": "Sensitive cookie sent without enforcing SSL encryption.",
-      "cwe": [
-        "CWE-614",
-        "CWE-311",
-        "CWE-312",
-        "CWE-319"
-      ],
-      "severity": "warning",
-      "security_severity": "5.0",
-      "file": "session_handling_5.js",
-      "line": 53,
-      "model": "Chaptgpt-5",
-      "mitigation": [
-        "Encrypt sensitive data in transit using TLS",
-        "Encrypt sensitive data at rest using strong cryptographic algorithms",
-        "Avoid including sensitive data in URLs",
-        "Implement proper key management"
       ]
     },
     {
@@ -2741,29 +2329,6 @@
       ]
     },
     {
-      "category": "Data Protection Failures",
-      "description": "Weaknesses that expose sensitive information due to improper encryption, cleartext storage, insecure transmission, or unsafe use of URL parameters.",
-      "rule_id": "js/clear-text-cookie",
-      "message": "Sensitive cookie sent without enforcing SSL encryption.",
-      "cwe": [
-        "CWE-614",
-        "CWE-311",
-        "CWE-312",
-        "CWE-319"
-      ],
-      "severity": "warning",
-      "security_severity": "5.0",
-      "file": "session_handling_5.js",
-      "line": 53,
-      "model": "Chaptgpt-5",
-      "mitigation": [
-        "Encrypt sensitive data in transit using TLS",
-        "Encrypt sensitive data at rest using strong cryptographic algorithms",
-        "Avoid including sensitive data in URLs",
-        "Implement proper key management"
-      ]
-    },
-    {
       "category": "Session Management Weaknesses",
       "description": "Weaknesses in session handling and state management that may allow session hijacking, fixation, or unauthorized request execution.",
       "rule_id": "js/clear-text-cookie",
@@ -2784,29 +2349,6 @@
         "Set Secure, HttpOnly, and SameSite cookie attributes",
         "Implement anti-CSRF tokens",
         "Enforce HTTPS across the application"
-      ]
-    },
-    {
-      "category": "Data Protection Failures",
-      "description": "Weaknesses that expose sensitive information due to improper encryption, cleartext storage, insecure transmission, or unsafe use of URL parameters.",
-      "rule_id": "js/clear-text-cookie",
-      "message": "Sensitive cookie sent without enforcing SSL encryption.",
-      "cwe": [
-        "CWE-614",
-        "CWE-311",
-        "CWE-312",
-        "CWE-319"
-      ],
-      "severity": "warning",
-      "security_severity": "5.0",
-      "file": "session_handling_7.js",
-      "line": 31,
-      "model": "Anthropic Claude Sonnet 4.6",
-      "mitigation": [
-        "Encrypt sensitive data in transit using TLS",
-        "Encrypt sensitive data at rest using strong cryptographic algorithms",
-        "Avoid including sensitive data in URLs",
-        "Implement proper key management"
       ]
     },
     {
@@ -2833,29 +2375,6 @@
       ]
     },
     {
-      "category": "Data Protection Failures",
-      "description": "Weaknesses that expose sensitive information due to improper encryption, cleartext storage, insecure transmission, or unsafe use of URL parameters.",
-      "rule_id": "js/clear-text-cookie",
-      "message": "Sensitive cookie sent without enforcing SSL encryption.",
-      "cwe": [
-        "CWE-614",
-        "CWE-311",
-        "CWE-312",
-        "CWE-319"
-      ],
-      "severity": "warning",
-      "security_severity": "5.0",
-      "file": "session_handling_8.js",
-      "line": 92,
-      "model": "Copilot GPT-4-class",
-      "mitigation": [
-        "Encrypt sensitive data in transit using TLS",
-        "Encrypt sensitive data at rest using strong cryptographic algorithms",
-        "Avoid including sensitive data in URLs",
-        "Implement proper key management"
-      ]
-    },
-    {
       "category": "Session Management Weaknesses",
       "description": "Weaknesses in session handling and state management that may allow session hijacking, fixation, or unauthorized request execution.",
       "rule_id": "js/clear-text-cookie",
@@ -2876,29 +2395,6 @@
         "Set Secure, HttpOnly, and SameSite cookie attributes",
         "Implement anti-CSRF tokens",
         "Enforce HTTPS across the application"
-      ]
-    },
-    {
-      "category": "Data Protection Failures",
-      "description": "Weaknesses that expose sensitive information due to improper encryption, cleartext storage, insecure transmission, or unsafe use of URL parameters.",
-      "rule_id": "js/clear-text-cookie",
-      "message": "Sensitive cookie sent without enforcing SSL encryption.",
-      "cwe": [
-        "CWE-614",
-        "CWE-311",
-        "CWE-312",
-        "CWE-319"
-      ],
-      "severity": "warning",
-      "security_severity": "5.0",
-      "file": "session_handling_9.js",
-      "line": 62,
-      "model": "Chaptgpt-5",
-      "mitigation": [
-        "Encrypt sensitive data in transit using TLS",
-        "Encrypt sensitive data at rest using strong cryptographic algorithms",
-        "Avoid including sensitive data in URLs",
-        "Implement proper key management"
       ]
     },
     {
@@ -3202,9 +2698,6 @@
       "file": "session_handling_5.js",
       "line": 87,
       "model": "Chaptgpt-5",
-      "file": "session_handling_5.js",
-      "line": 87,
-      "model": "Chaptgpt-5",
       "mitigation": [
         "Implement rate limiting",
         "Use CAPTCHA where appropriate",
@@ -3226,7 +2719,6 @@
       "security_severity": "7.5",
       "file": "session_handling_5.js",
       "line": 112,
-      "line": 112,
       "model": "Chaptgpt-5",
       "mitigation": [
         "Implement rate limiting",
@@ -3247,9 +2739,6 @@
       ],
       "severity": "warning",
       "security_severity": "7.5",
-      "file": "session_handling_6.js",
-      "line": 69,
-      "model": "xAI Grok 4",
       "file": "session_handling_6.js",
       "line": 69,
       "model": "xAI Grok 4",
@@ -3341,9 +2830,6 @@
       "file": "session_handling_8.js",
       "line": 229,
       "model": "Copilot GPT-4-class",
-      "file": "session_handling_8.js",
-      "line": 229,
-      "model": "Copilot GPT-4-class",
       "mitigation": [
         "Implement rate limiting",
         "Use CAPTCHA where appropriate",
@@ -3364,7 +2850,6 @@
       "severity": "warning",
       "security_severity": "7.5",
       "file": "session_handling_9.js",
-      "line": 99,
       "line": 99,
       "model": "Chaptgpt-5",
       "mitigation": [
@@ -4027,7 +3512,6 @@
       "description": "Weaknesses that allow attackers to abuse authentication mechanisms or exhaust system resources through brute-force or denial-of-service techniques.",
       "rule_id": "js/missing-rate-limiting",
       "message": "This route handler performs [a database access](1), but is not rate-limited.",
-      "message": "This route handler performs [a database access](1), but is not rate-limited.",
       "cwe": [
         "CWE-770",
         "CWE-307",
@@ -4035,8 +3519,6 @@
       ],
       "severity": "warning",
       "security_severity": "7.5",
-      "file": "token_management_1.js",
-      "line": 77,
       "file": "token_management_1.js",
       "line": 77,
       "model": "Chaptgpt-5",
@@ -4061,7 +3543,6 @@
       "security_severity": "7.5",
       "file": "token_management_1.js",
       "line": 108,
-      "line": 108,
       "model": "Chaptgpt-5",
       "mitigation": [
         "Implement rate limiting",
@@ -4083,29 +3564,6 @@
       "severity": "warning",
       "security_severity": "7.5",
       "file": "token_management_1.js",
-      "line": 142,
-      "model": "Chaptgpt-5",
-      "mitigation": [
-        "Implement rate limiting",
-        "Use CAPTCHA where appropriate",
-        "Apply account lockout policies",
-        "Enforce resource usage quotas"
-      ]
-    },
-    {
-      "category": "Authentication and Resource Abuse",
-      "description": "Weaknesses that allow attackers to abuse authentication mechanisms or exhaust system resources through brute-force or denial-of-service techniques.",
-      "rule_id": "js/missing-rate-limiting",
-      "message": "This route handler performs [authorization](1), but is not rate-limited.",
-      "cwe": [
-        "CWE-770",
-        "CWE-307",
-        "CWE-400"
-      ],
-      "severity": "warning",
-      "security_severity": "7.5",
-      "file": "token_management_1.js",
-      "line": 142,
       "line": 142,
       "model": "Chaptgpt-5",
       "mitigation": [
@@ -4149,8 +3607,6 @@
       ],
       "severity": "warning",
       "security_severity": "7.5",
-      "file": "token_management_10.js",
-      "line": 75,
       "file": "token_management_10.js",
       "line": 75,
       "model": "Chaptgpt-5",
@@ -4197,8 +3653,6 @@
       "security_severity": "7.5",
       "file": "token_management_11.js",
       "line": 55,
-      "file": "token_management_11.js",
-      "line": 55,
       "model": "xAI Grok 4",
       "mitigation": [
         "Implement rate limiting",
@@ -4220,7 +3674,6 @@
       "severity": "warning",
       "security_severity": "7.5",
       "file": "token_management_11.js",
-      "line": 88,
       "line": 88,
       "model": "xAI Grok 4",
       "mitigation": [
@@ -4279,7 +3732,6 @@
       "description": "Weaknesses that allow attackers to abuse authentication mechanisms or exhaust system resources through brute-force or denial-of-service techniques.",
       "rule_id": "js/missing-rate-limiting",
       "message": "This route handler performs [a database access](1), but is not rate-limited.",
-      "message": "This route handler performs [a database access](1), but is not rate-limited.",
       "cwe": [
         "CWE-770",
         "CWE-307",
@@ -4288,7 +3740,6 @@
       "severity": "warning",
       "security_severity": "7.5",
       "file": "token_management_12.js",
-      "line": 79,
       "line": 79,
       "model": "xAI Grok 4",
       "mitigation": [
@@ -4310,8 +3761,6 @@
       ],
       "severity": "warning",
       "security_severity": "7.5",
-      "file": "token_management_12.js",
-      "line": 122,
       "file": "token_management_12.js",
       "line": 122,
       "model": "xAI Grok 4",
@@ -4458,29 +3907,6 @@
       "category": "Authentication and Resource Abuse",
       "description": "Weaknesses that allow attackers to abuse authentication mechanisms or exhaust system resources through brute-force or denial-of-service techniques.",
       "rule_id": "js/missing-rate-limiting",
-      "message": "This route handler performs [authorization](1), but is not rate-limited.",
-      "cwe": [
-        "CWE-770",
-        "CWE-307",
-        "CWE-400"
-      ],
-      "severity": "warning",
-      "security_severity": "7.5",
-      "file": "token_management_2.js",
-      "line": 71,
-      "model": "Chaptgpt-5",
-      "mitigation": [
-        "Implement rate limiting",
-        "Use CAPTCHA where appropriate",
-        "Apply account lockout policies",
-        "Enforce resource usage quotas"
-      ]
-    },
-    {
-      "category": "Authentication and Resource Abuse",
-      "description": "Weaknesses that allow attackers to abuse authentication mechanisms or exhaust system resources through brute-force or denial-of-service techniques.",
-      "rule_id": "js/missing-rate-limiting",
-      "message": "This route handler performs [a database access](1), but is not rate-limited.",
       "message": "This route handler performs [a database access](1), but is not rate-limited.",
       "cwe": [
         "CWE-770",
@@ -4492,50 +3918,6 @@
       "file": "token_management_2.js",
       "line": 104,
       "model": "Chaptgpt-5",
-      "mitigation": [
-        "Implement rate limiting",
-        "Use CAPTCHA where appropriate",
-        "Apply account lockout policies",
-        "Enforce resource usage quotas"
-      ]
-    },
-    {
-      "category": "Authentication and Resource Abuse",
-      "description": "Weaknesses that allow attackers to abuse authentication mechanisms or exhaust system resources through brute-force or denial-of-service techniques.",
-      "rule_id": "js/missing-rate-limiting",
-      "message": "This route handler performs [a database access](1), but is not rate-limited.",
-      "cwe": [
-        "CWE-770",
-        "CWE-307",
-        "CWE-400"
-      ],
-      "severity": "warning",
-      "security_severity": "7.5",
-      "file": "token_management_16.js",
-      "line": 128,
-      "model": "Copilot GPT-4-class",
-      "mitigation": [
-        "Implement rate limiting",
-        "Use CAPTCHA where appropriate",
-        "Apply account lockout policies",
-        "Enforce resource usage quotas"
-      ]
-    },
-    {
-      "category": "Authentication and Resource Abuse",
-      "description": "Weaknesses that allow attackers to abuse authentication mechanisms or exhaust system resources through brute-force or denial-of-service techniques.",
-      "rule_id": "js/missing-rate-limiting",
-      "message": "This route handler performs [authorization](1), but is not rate-limited.",
-      "cwe": [
-        "CWE-770",
-        "CWE-307",
-        "CWE-400"
-      ],
-      "severity": "warning",
-      "security_severity": "7.5",
-      "file": "token_management_16.js",
-      "line": 156,
-      "model": "Copilot GPT-4-class",
       "mitigation": [
         "Implement rate limiting",
         "Use CAPTCHA where appropriate",
@@ -4767,28 +4149,6 @@
       "category": "Authentication and Resource Abuse",
       "description": "Weaknesses that allow attackers to abuse authentication mechanisms or exhaust system resources through brute-force or denial-of-service techniques.",
       "rule_id": "js/missing-rate-limiting",
-      "message": "This route handler performs [a database access](1), but is not rate-limited.",
-      "cwe": [
-        "CWE-770",
-        "CWE-307",
-        "CWE-400"
-      ],
-      "severity": "warning",
-      "security_severity": "7.5",
-      "file": "token_management_5.js",
-      "line": 264,
-      "model": "Anthropic Claude Sonnet 4.6",
-      "mitigation": [
-        "Implement rate limiting",
-        "Use CAPTCHA where appropriate",
-        "Apply account lockout policies",
-        "Enforce resource usage quotas"
-      ]
-    },
-    {
-      "category": "Authentication and Resource Abuse",
-      "description": "Weaknesses that allow attackers to abuse authentication mechanisms or exhaust system resources through brute-force or denial-of-service techniques.",
-      "rule_id": "js/missing-rate-limiting",
       "message": "This route handler performs [authorization](1), but is not rate-limited.",
       "cwe": [
         "CWE-770",
@@ -4821,28 +4181,6 @@
       "security_severity": "7.5",
       "file": "token_management_6.js",
       "line": 253,
-      "model": "Anthropic Claude Sonnet 4.6",
-      "mitigation": [
-        "Implement rate limiting",
-        "Use CAPTCHA where appropriate",
-        "Apply account lockout policies",
-        "Enforce resource usage quotas"
-      ]
-    },
-    {
-      "category": "Authentication and Resource Abuse",
-      "description": "Weaknesses that allow attackers to abuse authentication mechanisms or exhaust system resources through brute-force or denial-of-service techniques.",
-      "rule_id": "js/missing-rate-limiting",
-      "message": "This route handler performs [authorization](1), but is not rate-limited.",
-      "cwe": [
-        "CWE-770",
-        "CWE-307",
-        "CWE-400"
-      ],
-      "severity": "warning",
-      "security_severity": "7.5",
-      "file": "token_management_6.js",
-      "line": 263,
       "model": "Anthropic Claude Sonnet 4.6",
       "mitigation": [
         "Implement rate limiting",
@@ -5163,30 +4501,6 @@
       "category": "Authentication and Resource Abuse",
       "description": "Weaknesses that allow attackers to abuse authentication mechanisms or exhaust system resources through brute-force or denial-of-service techniques.",
       "rule_id": "js/missing-rate-limiting",
-      "message": "This route handler performs [authorization](1), but is not rate-limited.",
-      "cwe": [
-        "CWE-770",
-        "CWE-307",
-        "CWE-400"
-      ],
-      "severity": "warning",
-      "security_severity": "7.5",
-      "file": "user_login_validation_14.js",
-      "line": 168,
-      "line": 168,
-      "model": "Anthropic Claude Sonnet 4.6",
-      "mitigation": [
-        "Implement rate limiting",
-        "Use CAPTCHA where appropriate",
-        "Apply account lockout policies",
-        "Enforce resource usage quotas"
-      ]
-    },
-    {
-      "category": "Authentication and Resource Abuse",
-      "description": "Weaknesses that allow attackers to abuse authentication mechanisms or exhaust system resources through brute-force or denial-of-service techniques.",
-      "rule_id": "js/missing-rate-limiting",
-      "message": "This route handler performs [a database access](1), but is not rate-limited.",
       "message": "This route handler performs [a database access](1), but is not rate-limited.",
       "cwe": [
         "CWE-770",
@@ -5217,9 +4531,6 @@
       ],
       "severity": "warning",
       "security_severity": "7.5",
-      "file": "user_login_validation_16.js",
-      "line": 57,
-      "model": "Copilot GPT-4-class",
       "file": "user_login_validation_16.js",
       "line": 57,
       "model": "Copilot GPT-4-class",
